@@ -35,7 +35,6 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV DJANGO_SETTINGS_MODULE=university_backend.settings
 
-# Команда запуска
 CMD ["bash", "-c", "\
     python manage.py makemigrations && \
     python manage.py migrate && \

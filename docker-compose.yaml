@@ -1,12 +1,10 @@
 services:
   api:
     build: .
-    command: >
-      sh -c "python manage.py migrate &&
-             python manage.py collectstatic --noinput &&
-             gunicorn university_backend.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - .:/app
+      - static_volume:/app/static
+      - media_volume:/app/media
     ports:
       - "8000:8000"
     env_file:
@@ -32,8 +30,12 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+      - static_volume:/app/static
+      - media_volume:/app/media
     depends_on:
       - api
 
 volumes:
   postgres_data:
+  static_volume:
+  media_volume:
