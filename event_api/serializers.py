@@ -108,3 +108,13 @@ class PostSerializer(serializers.ModelSerializer):
                 videos_to_delete.delete()
 
         return instance
+
+
+class PostDetailSerializer(serializers.ModelSerializer):
+    photos = PhotoSerializer(many=True, read_only=True)
+    videos = VideoSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Post
+        fields = ('id', 'author', 'type', 'description', 'event_date', 'photos', 'videos', 'created_at')
+        

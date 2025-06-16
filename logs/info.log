@@ -5641,3 +5641,33 @@ AttributeError: 'User' object has no attribute 'name'
 2025-06-16 10:27:00,899 INFO Request: GET /static/admin/css/nav_sidebar.css | User: root
 2025-06-16 10:27:00,908 INFO Request: GET /static/admin/css/responsive.css | User: root
 2025-06-16 10:27:00,917 INFO Request: GET /static/admin/js/nav_sidebar.js | User: root
+2025-06-16 13:24:03,181 INFO Watching for file changes with StatReloader
+2025-06-16 13:24:06,208 INFO Request: GET / | User: 
+2025-06-16 13:24:06,211 WARNING Not Found: /
+2025-06-16 13:25:09,469 INFO Request: GET / | User: 
+2025-06-16 13:25:09,472 WARNING Not Found: /
+2025-06-16 13:25:09,591 INFO Request: GET /favicon.ico | User: 
+2025-06-16 13:25:09,592 WARNING Not Found: /favicon.ico
+2025-06-16 13:25:35,563 INFO Request: GET / | User: 
+2025-06-16 13:25:35,565 WARNING Not Found: /
+2025-06-16 20:23:48,074 INFO Watching for file changes with StatReloader
+2025-06-16 20:24:02,922 INFO Request: POST /api/token/ | User: 
+2025-06-16 20:24:17,632 INFO Request: GET /post/ | User: root
+2025-06-16 20:25:01,297 INFO Request: GET /post/17/ | User: root
+2025-06-16 20:25:07,579 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:25:08,839 INFO Watching for file changes with StatReloader
+2025-06-16 20:25:12,156 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:25:13,422 INFO Watching for file changes with StatReloader
+2025-06-16 20:25:19,121 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:25:20,263 INFO Watching for file changes with StatReloader
+2025-06-16 20:25:24,486 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:25:25,513 INFO Watching for file changes with StatReloader
+2025-06-16 20:25:42,113 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:25:42,977 INFO Watching for file changes with StatReloader
+2025-06-16 20:25:49,347 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:25:50,332 INFO Watching for file changes with StatReloader
+2025-06-16 20:26:09,213 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-16 20:26:10,447 INFO Watching for file changes with StatReloader
+2025-06-16 20:26:12,626 INFO Request: GET /post/17/ | User: root
+2025-06-16 20:26:25,681 INFO Request: GET /post/ | User: root
+2025-06-16 20:26:29,413 INFO Request: GET /post/17/ | User: root

@@ -94,16 +94,20 @@ class PostViewSet(ModelViewSet):
     http_method_names = ['get', 'post', 'patch', 'delete']
 
     def get_queryset(self):
-        return Post.objects.prefetch_related('photos', 'videos')
+        return Post.objects.prefetch_related('photos', 'videos').select_related('author')
 
-    def retrieve(self, request, *args, **kwargs):
-        post = self.get_object()
-        photos = PostPhoto.objects.filter(post=post)
-        videos = PostVideo.objects.filter(post=post)
-        data = {
-            'post': self.get_serializer(post).data,
-            'photos': PhotoSerializer(photos, many=True).data,
-            'videos': VideoSerializer(videos, many=True).data,
-        }
-        return Response(data, status=status.HTTP_200_OK)
+    # def retrieve(self, request, *args, **kwargs):
+    #     post = self.get_object()
+    #     photos = PostPhoto.objects.filter(post=post)
+    #     videos = PostVideo.objects.filter(post=post)
+    #     data = {
+    #         'post': self.get_serializer(post).data,
+    #         'photos': PhotoSerializer(photos, many=True).data,
+    #         'videos': VideoSerializer(videos, many=True).data,
+    #     }
+    #     return Response(data, status=status.HTTP_200_OK)
 
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return PostDetailSerializer
+        return super().get_serializer_class()
