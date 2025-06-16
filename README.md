@@ -1,7 +1,7 @@
 ## Installation:
 Clone repos
 ```bash 
-git https://github.com/x1ryrgg/marketplace_api.git
+git https://github.com/x1ryrgg/university-app.git
 ```
 
 Creating a superuser for the admin panel (Optional)
