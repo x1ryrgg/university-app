@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "university-backend"
+version = "0.1.0"
+description = ""
+authors = ["none"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+django = "^5.2.3"
+requests = "^2.32.4"
+djangorestframework = "^3.16.0"
+dotenv = "^0.9.9"
+psycopg2-binary = "2.9.10"
+ipython = "^9.3.0"
+django-extensions = "^4.1"
+django-cors-headers = "^4.7.0"
+pillow = "^11.2.1"
+djangorestframework-simplejwt = "^5.5.0"
+pytest = "^8.4.0"
+pytest-django = "^4.11.1"
+django-filter = "^25.1"
+gunicorn = "^23.0.0"
+drf-yasg = "^1.21.10"
+drf-spectacular = "^0.28.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
