@@ -8,9 +8,9 @@ from .models import *
 logger = logging.getLogger(__name__)
 
 
-@receiver(pre_delete, sender=Post)
+@receiver(pre_delete, sender=Event)
 def delete_post_media_files(sender, instance, **kwargs):
-    photos = PostPhoto.objects.filter(post=instance)
+    photos = EventPhoto.objects.filter(post=instance)
     for photo in photos:
         try:
             if photo.photo and os.path.exists(photo.photo.path):
@@ -19,7 +19,7 @@ def delete_post_media_files(sender, instance, **kwargs):
         except Exception as e:
             logger.error(f"Error deleting photo file {photo.photo.path}: {str(e)}")
 
-    videos = PostVideo.objects.filter(post=instance)
+    videos = EventVideo.objects.filter(post=instance)
     for video in videos:
         try:
             if video.video and os.path.exists(video.video.path):

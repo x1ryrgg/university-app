@@ -51,19 +51,16 @@ class GroupViewSet(ModelViewSet):
     body: post: name (str)
     """
     permission_classes = (IsTeacherOrReadOnly, )
-    queryset = Group.objects.all()
     serializer_class = GroupSerializer
     http_method_names = ['get', 'post', 'patch', 'delete']
 
-    def retrieve(self, request, *args, **kwargs) -> Response:
-        group = self.get_object()
-        students = User.objects.filter(group=group).select_related('group')
-        students_in_group = UserSerializer(students, many=True).data
-        data = {
-            'group': self.get_serializer(group).data,
-            'students': students_in_group
-        }
-        return Response(data, status=status.HTTP_200_OK)
+    def get_queryset(self):
+        return Group.objects.prefetch_related('students')
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return DetailGroupSerializer
+        return super().get_serializer_class()
 
     def partial_update(self, request, *args, **kwargs) -> Response:
         """ Добавление или удаления студентов из группы

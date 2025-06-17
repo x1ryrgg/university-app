@@ -17,7 +17,7 @@ class StudentRegisterSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         if not attrs.get('email'):
-            attrs['email'] = f"{attrs['username']}@вгту_university.edu"
+            attrs['email'] = f"{attrs['username']}#{attrs['id']}@вгту_university.edu"
 
         return attrs
 
@@ -26,18 +26,25 @@ class StudentRegisterSerializer(serializers.ModelSerializer):
             role=User.Role.STUDENT, **validated_data)
         return user
 
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'role')
+
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
         fields = ('id', 'name')
         read_only_fields = ('id', )
 
-class UserSerializer(serializers.ModelSerializer):
-    group = GroupSerializer()
+
+class DetailGroupSerializer(serializers.ModelSerializer):
+    students = UserSerializer(many=True, read_only=True)
 
     class Meta:
-        model = User
-        fields = ('id', 'username', 'email', 'role', 'group')
+        model = Group
+        fields = ('id', 'name', 'students')
+
 
 
 

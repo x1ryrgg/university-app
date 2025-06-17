@@ -18,7 +18,7 @@ from rest_framework.permissions import IsAuthenticated
         summary="Список постов",
         description="Получить список всех постов с пагинацией",
         responses={
-            200: PostSerializer(many=True),
+            200: EventSerializer(many=True),
             401: OpenApiResponse(description="Не авторизован")
         },
         examples=[
@@ -40,7 +40,7 @@ from rest_framework.permissions import IsAuthenticated
     create=extend_schema(
         summary="Создать пост",
         description="Создание нового поста (требуется аутентификация)",
-        request=PostSerializer,
+        request=EventSerializer,
         examples=[
             OpenApiExample(
                 'Пример запроса',
@@ -59,18 +59,38 @@ from rest_framework.permissions import IsAuthenticated
             OpenApiExample(
                 'Пример ответа',
                 value={
-                    "post": {
-                        "id": 1,
-                        "title": "Бабушка валя",
-                        "content": "баб валя...",
-                        "author": 1
-                    },
-                    "photos": [
-                        {"id": 1, "image": "http://example.com/photo1.jpg"}
-                    ],
-                    "videos": [
-                        {"id": 1, "video_url": "http://example.com/video_with_bab_valya_full.mp4"}
-                    ]
+                    "event": {
+                            "id": 1,
+                            "title": "Экскурсия Костика в аквариум",
+                            "description": "18 по идеи пост",
+                            "location": "Аквариум \"Поцелуй 11-классницы\"",
+                            "attendees": 0,
+                            "max_attendees": 0,
+                            "type": "excursion",
+                            "author": 4,
+                            "group": 1,
+                            "event_date": "2025-06-20T17:30:00+03:00",
+                            "created_at": "2025-06-17T12:12:39.820795+03:00",
+                            "photos": [
+                                {
+                                    "id": 30,
+                                    "photo": "http://localhost:8000/media/photo/Screenshot_2025-05-02_151209_eVc1aVh.png",
+                                    "description": 'описание...'
+                                },
+                                {
+                                    "id": 31,
+                                    "photo": "http://localhost:8000/media/photo/Screenshot_2025-05-15_173931_esRD9kW.png",
+                                    "description": 'описание...'
+                                }
+                            ],
+                            "videos": [
+                                {
+                                    "id": 14,
+                                    "video": "http://localhost:8000/media/video/content_warning_0c895d38_nTqs3LT.webm",
+                                    "description": 'описание...'
+                                }
+                            ]
+                        }
                 },
                 response_only=True,
                 status_codes=['200']
@@ -81,7 +101,7 @@ from rest_framework.permissions import IsAuthenticated
         summary="Обновить пост",
         description="Частичное обновление поста: если добавления media, то action == 'add', photos и videos"
                     "если удаление media из поста: action == 'remove', photo_ids [photo_id, ...] и video_ids [video_id, ...]",
-        request=PostSerializer,
+        request=EventSerializer,
     ),
     destroy=extend_schema(
         summary="Удалить пост",
@@ -89,25 +109,14 @@ from rest_framework.permissions import IsAuthenticated
     )
 )
 class PostViewSet(ModelViewSet):
-    serializer_class = PostSerializer
+    serializer_class = EventSerializer
     permission_classes = (IsAuthenticated, )
     http_method_names = ['get', 'post', 'patch', 'delete']
 
     def get_queryset(self):
-        return Post.objects.prefetch_related('photos', 'videos').select_related('author')
-
-    # def retrieve(self, request, *args, **kwargs):
-    #     post = self.get_object()
-    #     photos = PostPhoto.objects.filter(post=post)
-    #     videos = PostVideo.objects.filter(post=post)
-    #     data = {
-    #         'post': self.get_serializer(post).data,
-    #         'photos': PhotoSerializer(photos, many=True).data,
-    #         'videos': VideoSerializer(videos, many=True).data,
-    #     }
-    #     return Response(data, status=status.HTTP_200_OK)
+        return Event.objects.prefetch_related('photos', 'videos').select_related('author')
 
     def get_serializer_class(self):
         if self.action == 'retrieve':
-            return PostDetailSerializer
+            return DetailEventSerializer
         return super().get_serializer_class()

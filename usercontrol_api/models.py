@@ -18,7 +18,7 @@ class User(AbstractUser):
 
     email = models.EmailField()
     role = models.CharField(max_length=7, choices=Role, default=Role.TEACHER)
-    group = models.ForeignKey(Group, on_delete=models.SET_NULL, blank=True, null=True)
+    group = models.ForeignKey(Group, on_delete=models.SET_NULL, blank=True, null=True, related_name='students')
 
     def __str__(self):
         return '%s (%s) - %s' % (self.username, self.group, self.role)

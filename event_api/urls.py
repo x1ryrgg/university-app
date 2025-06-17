@@ -9,5 +9,5 @@ router = DefaultRouter()
 router.register('', PostViewSet, basename='post')
 
 urlpatterns = [
-    path('post/', include(router.urls)),
+    path('event/', include(router.urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
