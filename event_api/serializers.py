@@ -1,5 +1,6 @@
 from .models import *
 from rest_framework import serializers
+from usercontrol_api.serializers import UserSerializer, GroupSerializer
 
 
 class PhotoSerializer(serializers.ModelSerializer):
@@ -33,29 +34,43 @@ class EventSerializer(serializers.ModelSerializer):
     action = serializers.CharField(write_only=True, required=False)
     photo_ids = serializers.ListField(child=serializers.IntegerField(), write_only=True, required=False)
     video_ids = serializers.ListField(child=serializers.IntegerField(), write_only=True, required=False)
+    author = UserSerializer(read_only=True)
+    group = GroupSerializer(read_only=True)
+    first_photo = serializers.SerializerMethodField()
 
     class Meta:
         model = Event
         fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'author', 'group',
-                  'event_date', 'photos', 'videos', 'created_at',
+                  'event_date', 'photos', 'videos', 'created_at', 'first_photo',
                   'action', 'photo_ids', 'video_ids')
-        read_only_fields = ('id', 'author', 'created_at', 'attendees')
-        extra_kwargs = {'max_attendees': {'required': True}}
+        read_only_fields = ('id', 'author', 'created_at', 'attendees', 'first_photo')
+
+    def get_first_photo(self, obj):
+        first_photo = obj.photos.first()
+        if first_photo:
+            serializer = PhotoSerializer(
+                first_photo,
+                context=self.context
+            )
+            return serializer.data
+        return None
 
     def create(self, validated_data):
         photos_data = validated_data.pop('photos', [])
         videos_data = validated_data.pop('videos', [])
         validated_data['author'] = self.context['request'].user
 
-        post = Event.objects.create(**validated_data)
+        event = Event.objects.create(**validated_data)
 
-        for photo in photos_data:
-            EventPhoto.objects.create(post=post, photo=photo)
+        if photos_data:
+            photo_objects = [EventPhoto(event=event, photo=photo) for photo in photos_data]
+            EventPhoto.objects.bulk_create(photo_objects)
 
-        for video in videos_data:
-            EventVideo.objects.create(post=post, video=video)
+        if videos_data:
+            video_objects = [EventVideo(event=event, video=video) for video in videos_data]
+            EventVideo.objects.bulk_create(video_objects)
 
-        return post
+        return event
 
     def update(self, instance, validated_data):
         action = validated_data.pop('action', None)
@@ -69,23 +84,23 @@ class EventSerializer(serializers.ModelSerializer):
 
         if action == 'add':
             if photos_data:
-                photo_objects = [EventPhoto(post=instance, photo=photo) for photo in photos_data]
+                photo_objects = [EventPhoto(event=instance, photo=photo) for photo in photos_data]
                 EventPhoto.objects.bulk_create(photo_objects)
 
             if videos_data:
-                video_objects = [EventVideo(post=instance, video=video) for video in videos_data]
+                video_objects = [EventVideo(event=instance, video=video) for video in videos_data]
                 EventVideo.objects.bulk_create(video_objects)
 
         elif action == 'remove':
             if photo_ids:
-                photos_to_delete = EventPhoto.objects.filter(post=instance, id__in=photo_ids)
+                photos_to_delete = EventPhoto.objects.filter(event=instance, id__in=photo_ids)
 
                 for photo in photos_to_delete:
                     photo.photo.delete(save=False)
                 photos_to_delete.delete()
 
             if video_ids:
-                videos_to_delete = EventVideo.objects.filter(post=instance, id__in=video_ids)
+                videos_to_delete = EventVideo.objects.filter(event=instance, id__in=video_ids)
                 for video in videos_to_delete:
                     video.video.delete(save=False)
                 videos_to_delete.delete()

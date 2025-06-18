@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import *
 
 
-class StudentRegisterSerializer(serializers.ModelSerializer):
+class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
@@ -10,8 +10,8 @@ class StudentRegisterSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'password': {'write_only': True},
             'email': {'required': False},
-            'first_name': {'required': False},
-            'last_name': {'required': False}
+            'first_name': {'required': True},
+            'last_name': {'required': True}
         }
         read_only_fields = ('id',)
 
@@ -29,7 +29,7 @@ class StudentRegisterSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'role')
+        fields = ('id', 'username', 'role', 'email', 'first_name', 'last_name')
 
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:

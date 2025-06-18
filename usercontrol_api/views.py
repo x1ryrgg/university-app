@@ -23,7 +23,7 @@ class RegisterView(CreateAPIView):
             first_name (Optional, str), last_name (Optional, str)
     """
     queryset = User.objects.all()
-    serializer_class = StudentRegisterSerializer
+    serializer_class = RegisterSerializer
 
     def post(self, request, *args, **kwargs) -> Response:
         serializer = self.get_serializer(data=request.data)

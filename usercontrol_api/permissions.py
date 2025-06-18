@@ -3,7 +3,7 @@ from .models import User
 
 
 class IsTeacherOrReadOnly(BasePermission):
-    message = 'Создавать и изменять группы может только преподаватаель. '
+    message = 'Доступно только учителям. '
 
     def has_permission(self, request, view):
         return bool(

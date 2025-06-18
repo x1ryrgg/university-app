@@ -11,6 +11,7 @@ from drf_spectacular.utils import (
 
 from .models import *
 from .serializers import *
+from usercontrol_api.permissions import IsTeacherOrReadOnly
 from rest_framework.permissions import IsAuthenticated
 
 @extend_schema_view(
@@ -110,7 +111,7 @@ from rest_framework.permissions import IsAuthenticated
 )
 class PostViewSet(ModelViewSet):
     serializer_class = EventSerializer
-    permission_classes = (IsAuthenticated, )
+    permission_classes = (IsTeacherOrReadOnly, )
     http_method_names = ['get', 'post', 'patch', 'delete']
 
     def get_queryset(self):
@@ -120,3 +121,5 @@ class PostViewSet(ModelViewSet):
         if self.action == 'retrieve':
             return DetailEventSerializer
         return super().get_serializer_class()
+
+

@@ -23,6 +23,7 @@ django-filter = "^25.1"
 gunicorn = "^23.0.0"
 drf-yasg = "^1.21.10"
 drf-spectacular = "^0.28.0"
+notebook = "^7.4.3"
 
 
 [build-system]

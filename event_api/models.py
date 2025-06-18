@@ -15,7 +15,7 @@ class Event(models.Model):
     description = models.TextField(max_length=500, blank=True, null=True)
     location = models.CharField(max_length=128)
     group = models.ForeignKey(Group, on_delete=models.SET_NULL, null=True, blank=True)
-    max_attendees = models.PositiveIntegerField(default=0)
+    max_attendees = models.PositiveIntegerField(default=100, blank=True, null=True)
     type = models.CharField(max_length=10, choices=Type.choices, default=Type.CONFERENCE)
     event_date = models.DateTimeField(default=datetime.datetime.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
@@ -37,7 +37,7 @@ class Event(models.Model):
 
 
 class EventPhoto(models.Model):
-    post = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='photos')
+    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='photos')
     photo = models.ImageField(upload_to='photo/')
     description = models.TextField(max_length=300, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -46,11 +46,11 @@ class EventPhoto(models.Model):
         ordering = ['created_at']
 
     def __str__(self):
-        return f"Photo for post #%s" % self.post.id
+        return f"Photo for post #%s" % self.event.id
 
 
 class EventVideo(models.Model):
-    post = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='videos')
+    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='videos')
     video = models.FileField(upload_to='video/')
     description = models.TextField(max_length=300, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -59,4 +59,4 @@ class EventVideo(models.Model):
         ordering = ['created_at']
 
     def __str__(self):
-        return f"Video for post #%s" % self.post.id
+        return f"Video for post #%s" % self.event.id
