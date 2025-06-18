@@ -36,11 +36,17 @@ class EventSerializer(serializers.ModelSerializer):
     video_ids = serializers.ListField(child=serializers.IntegerField(), write_only=True, required=False)
     author = UserSerializer(read_only=True)
     group = GroupSerializer(read_only=True)
+    group_id = serializers.PrimaryKeyRelatedField(
+        queryset=Group.objects.all(),
+        source='group',
+        write_only=True,
+        required=False
+    )
     first_photo = serializers.SerializerMethodField()
 
     class Meta:
         model = Event
-        fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'author', 'group',
+        fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'author', 'group', 'group_id',
                   'event_date', 'photos', 'videos', 'created_at', 'first_photo',
                   'action', 'photo_ids', 'video_ids')
         read_only_fields = ('id', 'author', 'created_at', 'attendees', 'first_photo')

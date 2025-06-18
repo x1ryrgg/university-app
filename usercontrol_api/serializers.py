@@ -17,7 +17,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         if not attrs.get('email'):
-            attrs['email'] = f"{attrs['username']}#{attrs['id']}@вгту_university.edu"
+            attrs['email'] = f"{attrs['username']}@вгту_university.edu"
 
         return attrs
 

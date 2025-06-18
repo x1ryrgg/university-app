@@ -24,6 +24,7 @@ gunicorn = "^23.0.0"
 drf-yasg = "^1.21.10"
 drf-spectacular = "^0.28.0"
 notebook = "^7.4.3"
+django-debug-toolbar = "^5.2.0"
 
 
 [build-system]

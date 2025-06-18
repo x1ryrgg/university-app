@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'drf_spectacular',
+    'debug_toolbar',
 
     'usercontrol_api',
     'event_api',
@@ -63,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'university_backend.custom_middleware.LoggerMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -146,6 +148,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 52428800
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

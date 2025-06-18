@@ -1,0 +1,323 @@
+2025-06-18 17:35:54,130 INFO Watching for file changes with StatReloader
+2025-06-18 17:35:56,333 INFO Request: GET / | User: 
+2025-06-18 17:35:56,335 WARNING Not Found: /
+2025-06-18 17:35:56,429 INFO Request: GET /favicon.ico | User: 
+2025-06-18 17:35:56,430 WARNING Not Found: /favicon.ico
+2025-06-18 17:35:58,709 INFO Request: GET /admin/ | User: 
+2025-06-18 17:35:58,862 INFO Request: GET /admin/login/ | User: 
+2025-06-18 17:36:00,779 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:37,271 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:37,343 INFO Request: GET /favicon.ico | User: 
+2025-06-18 17:36:37,343 WARNING Not Found: /favicon.ico
+2025-06-18 17:36:43,187 INFO D:\python\university_backend\university_backend\urls.py changed, reloading.
+2025-06-18 17:36:43,914 INFO Watching for file changes with StatReloader
+2025-06-18 17:36:44,973 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:45,028 INFO Request: GET /favicon.ico | User: 
+2025-06-18 17:36:45,030 WARNING Not Found: /favicon.ico
+2025-06-18 17:36:45,519 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:45,933 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:46,246 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:46,449 INFO Request: GET /event/ | User: 
+2025-06-18 17:36:54,016 INFO Watching for file changes with StatReloader
+2025-06-18 17:36:56,281 INFO Request: GET / | User: 
+2025-06-18 17:36:56,282 WARNING Not Found: /
+2025-06-18 17:37:24,883 INFO D:\python\university_backend\university_backend\settings.py changed, reloading.
+2025-06-18 17:37:25,516 INFO Watching for file changes with StatReloader
+2025-06-18 17:37:29,449 INFO Watching for file changes with StatReloader
+2025-06-18 17:37:31,232 INFO Request: GET / | User: 
+2025-06-18 17:37:31,248 WARNING Not Found: /
+2025-06-18 17:37:34,658 INFO Request: GET /admin/ | User: 
+2025-06-18 17:37:34,691 INFO Request: GET /admin/login/ | User: 
+2025-06-18 17:37:37,248 INFO Request: GET /event/ | User: 
+2025-06-18 17:37:38,598 INFO Request: GET /__debug__/render_panel/ | User: 
+2025-06-18 17:37:49,613 INFO Request: POST /api/token/ | User: 
+2025-06-18 17:37:49,624 WARNING Unauthorized: /api/token/
+2025-06-18 17:37:54,721 INFO Request: POST /api/token/ | User: 
+2025-06-18 17:37:54,729 WARNING Unauthorized: /api/token/
+2025-06-18 17:38:22,740 INFO Request: POST /api/token/ | User: 
+2025-06-18 17:39:32,233 INFO Request: GET /group/ | User: root
+2025-06-18 17:40:10,122 INFO Request: POST /group/ | User: root
+2025-06-18 17:40:22,435 INFO Request: POST /register/ | User: 
+2025-06-18 17:40:22,446 WARNING Unauthorized: /register/
+2025-06-18 17:40:27,275 INFO Request: POST /register/ | User: 
+2025-06-18 17:40:27,284 WARNING Bad Request: /register/
+2025-06-18 17:41:38,200 INFO Request: POST /register/ | User: 
+2025-06-18 17:41:38,208 WARNING Bad Request: /register/
+2025-06-18 17:41:47,597 INFO Request: POST /register/ | User: 
+2025-06-18 17:42:26,737 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\usercontrol_api\views.py", line 30, in post
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "D:\python\university_backend\usercontrol_api\serializers.py", line 20, in validate
+    attrs['email'] = f"{attrs['username']}#{attrs['id']}@‚„ÚÛ_university.edu"
+                                            ~~~~~^^^^^^
+KeyError: 'id'
+2025-06-18 17:42:26,742 INFO Request: POST /register/ | User: 
+2025-06-18 17:43:22,473 INFO D:\python\university_backend\usercontrol_api\serializers.py changed, reloading.
+2025-06-18 17:43:23,087 INFO Watching for file changes with StatReloader
+2025-06-18 17:43:35,883 INFO D:\python\university_backend\usercontrol_api\serializers.py changed, reloading.
+2025-06-18 17:43:36,601 INFO Watching for file changes with StatReloader
+2025-06-18 17:43:38,789 INFO Request: POST /register/ | User: 
+2025-06-18 17:44:33,141 INFO Request: PATCH /group/1/ | User: root
+2025-06-18 17:44:50,974 ERROR Internal Server Error: /event/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\event_api\serializers.py", line 63, in create
+    event = Event.objects.create(**validated_data)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 661, in create
+    obj = self.model(**kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\base.py", line 569, in __init__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Event() got unexpected keyword arguments: 'action'
+2025-06-18 17:44:50,977 INFO Request: POST /event/ | User: root
+2025-06-18 17:44:57,598 INFO Request: POST /event/ | User: root
+2025-06-18 17:45:48,863 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-18 17:45:49,630 INFO Watching for file changes with StatReloader
+2025-06-18 17:45:51,544 INFO Request: POST /event/ | User: root
+2025-06-18 17:45:51,564 WARNING Bad Request: /event/
+2025-06-18 17:46:00,393 INFO Request: POST /event/ | User: root
+2025-06-18 17:46:00,403 WARNING Bad Request: /event/
+2025-06-18 17:46:10,134 INFO Request: POST /event/ | User: root
+2025-06-18 17:46:10,145 WARNING Bad Request: /event/
+2025-06-18 17:46:30,973 INFO Request: POST /event/ | User: root
+2025-06-18 17:46:30,983 WARNING Bad Request: /event/
+2025-06-18 17:46:33,174 INFO Request: POST /event/ | User: root
+2025-06-18 17:46:33,183 WARNING Bad Request: /event/
+2025-06-18 17:47:29,588 INFO Request: POST /event/ | User: root
+2025-06-18 17:47:29,597 WARNING Bad Request: /event/
+2025-06-18 17:47:33,831 INFO Request: POST /event/ | User: root
+2025-06-18 17:47:33,841 WARNING Bad Request: /event/
+2025-06-18 17:47:42,266 INFO Request: POST /event/ | User: root
+2025-06-18 17:47:42,277 WARNING Bad Request: /event/
+2025-06-18 17:47:47,181 INFO Request: POST /event/ | User: root
+2025-06-18 17:47:47,193 WARNING Bad Request: /event/
+2025-06-18 17:48:08,016 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-18 17:48:08,899 INFO Watching for file changes with StatReloader
+2025-06-18 17:48:17,676 INFO Request: GET /group/1/ | User: root
+2025-06-18 17:48:24,771 INFO Request: POST /event/ | User: root
+2025-06-18 17:48:35,985 INFO Request: DELETE /event/2. | User: 
+2025-06-18 17:48:36,024 ERROR Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 130, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 167, in _postprocess
+    panel.generate_stats(request, response)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\panels\history\panel.py", line 64, in generate_stats
+    and request.body
+        ^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\http\request.py", line 378, in body
+    raise RequestDataTooBig(
+        "Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE."
+    )
+django.core.exceptions.RequestDataTooBig: Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+2025-06-18 17:48:38,076 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_arfpfgC.jpg
+2025-06-18 17:48:38,077 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_ZWekseM.jpg
+2025-06-18 17:48:38,079 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_OxVU7vE.webm
+2025-06-18 17:48:38,085 INFO Request: DELETE /event/2/ | User: root
+2025-06-18 17:48:38,142 ERROR Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 130, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 167, in _postprocess
+    panel.generate_stats(request, response)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\panels\history\panel.py", line 64, in generate_stats
+    and request.body
+        ^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\http\request.py", line 378, in body
+    raise RequestDataTooBig(
+        "Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE."
+    )
+django.core.exceptions.RequestDataTooBig: Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+2025-06-18 17:48:47,866 INFO Request: DELETE /event/2/ | User: root
+2025-06-18 17:48:47,885 ERROR Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 130, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 167, in _postprocess
+    panel.generate_stats(request, response)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\panels\history\panel.py", line 64, in generate_stats
+    and request.body
+        ^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\http\request.py", line 378, in body
+    raise RequestDataTooBig(
+        "Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE."
+    )
+django.core.exceptions.RequestDataTooBig: Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+2025-06-18 17:49:27,909 INFO Request: DELETE /event/2/ | User: root
+2025-06-18 17:49:27,928 WARNING Not Found: /event/2/
+2025-06-18 17:49:33,796 INFO Request: GET /event/2/ | User: root
+2025-06-18 17:49:33,818 WARNING Not Found: /event/2/
+2025-06-18 17:49:36,037 INFO Request: GET /event/ | User: root
+2025-06-18 17:49:44,074 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366.jpg
+2025-06-18 17:49:44,075 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371.jpg
+2025-06-18 17:49:44,077 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38.webm
+2025-06-18 17:49:44,082 INFO Request: DELETE /event/1/ | User: root
+2025-06-18 17:49:52,641 INFO Request: POST /event/ | User: root
+2025-06-18 17:49:59,103 INFO Request: POST /event/ | User: root
+2025-06-18 17:51:11,157 INFO Request: GET /event/4/ | User: root
+2025-06-18 17:51:11,194 ERROR Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 130, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\middleware.py", line 167, in _postprocess
+    panel.generate_stats(request, response)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\panels\history\panel.py", line 64, in generate_stats
+    and request.body
+        ^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\http\request.py", line 378, in body
+    raise RequestDataTooBig(
+        "Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE."
+    )
+django.core.exceptions.RequestDataTooBig: Request body exceeded settings.DATA_UPLOAD_MAX_MEMORY_SIZE.
+2025-06-18 17:51:22,219 INFO Request: GET /event/ | User: 
+2025-06-18 17:51:23,658 INFO Request: GET /__debug__/render_panel/ | User: 
+2025-06-18 17:52:00,908 INFO Request: GET /group/ | User: 
+2025-06-18 17:52:07,995 INFO Request: GET /group/1/ | User: 
+2025-06-18 17:52:09,827 INFO Request: GET /__debug__/render_panel/ | User: 
+2025-06-18 17:52:13,579 INFO Request: POST /__debug__/sql_select/ | User: 
+2025-06-18 17:52:20,020 INFO Request: GET /event/ | User: 
+2025-06-18 17:52:52,464 INFO D:\python\university_backend\university_backend\settings.py changed, reloading.
+2025-06-18 17:52:53,135 INFO Watching for file changes with StatReloader
+2025-06-18 17:52:54,563 INFO Request: GET /event/4/ | User: root
+2025-06-18 17:52:58,714 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_VJQ7Zap.jpg
+2025-06-18 17:52:58,715 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_S1XV1Qn.jpg
+2025-06-18 17:52:58,716 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_DURSryt.webm
+2025-06-18 17:52:58,719 INFO Request: DELETE /event/4/ | User: root
+2025-06-18 17:53:07,603 INFO Request: GET /event/ | User: 
+2025-06-18 17:53:09,179 INFO Request: GET /__debug__/render_panel/ | User: 
+2025-06-18 17:53:28,108 INFO Request: GET /event/3/ | User: 
+2025-06-18 17:53:52,064 INFO Request: PATCH /event/3/ | User: root
+2025-06-18 17:54:05,476 INFO Request: PATCH /event/3/ | User: root
+2025-06-18 17:57:49,989 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-18 17:57:50,652 INFO Watching for file changes with StatReloader
+2025-06-18 17:58:02,294 ERROR Internal Server Error: /event/3/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 67, in update
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'group_id' was declared on serializer EventSerializer, but has not been included in the 'fields' option.
+2025-06-18 17:58:02,298 INFO Request: PATCH /event/3/ | User: root
+2025-06-18 17:58:14,919 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-18 17:58:15,643 INFO Watching for file changes with StatReloader
+2025-06-18 17:58:17,186 INFO Request: PATCH /event/3/ | User: root
+2025-06-18 17:58:17,219 WARNING Bad Request: /event/3/
+2025-06-18 17:58:23,428 INFO Request: PATCH /event/3/ | User: root
+2025-06-18 17:58:36,337 INFO Request: POST /event/ | User: root
