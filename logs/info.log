@@ -344,3 +344,770 @@ AssertionError: The field 'group_id' was declared on serializer EventSerializer,
 2025-06-18 18:22:45,795 INFO Watching for file changes with StatReloader
 2025-06-18 18:22:49,540 INFO D:\python\university_backend\event_api\views.py changed, reloading.
 2025-06-18 18:22:50,154 INFO Watching for file changes with StatReloader
+2025-06-18 18:24:23,978 INFO Watching for file changes with StatReloader
+2025-06-18 18:24:25,989 INFO Request: GET / | User: 
+2025-06-18 18:24:26,006 WARNING Not Found: /
+2025-06-18 18:24:26,899 INFO Request: GET /admin/ | User: 
+2025-06-18 18:24:26,950 INFO Request: GET /admin/login/ | User: 
+2025-06-18 18:24:37,288 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:24:38,211 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:24:38,215 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:24:38,460 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:24:38,462 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:24:38,763 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:25:16,147 INFO Watching for file changes with StatReloader
+2025-06-18 18:25:18,870 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:25:19,112 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:25:19,115 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:25:19,274 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:25:19,276 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:25:19,519 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:26:03,102 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:26:03,783 INFO Watching for file changes with StatReloader
+2025-06-18 18:26:04,424 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:26:04,660 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:26:04,663 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:26:04,835 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:26:04,836 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:26:05,076 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:26:18,782 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:26:19,460 INFO Watching for file changes with StatReloader
+2025-06-18 18:28:28,030 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:28:28,841 INFO Watching for file changes with StatReloader
+2025-06-18 18:28:29,620 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:28:29,707 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:28:56,192 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:28:56,871 INFO Watching for file changes with StatReloader
+2025-06-18 18:28:57,465 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:28:57,660 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type type is not JSON serializable
+2025-06-18 18:28:57,662 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:28:57,817 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type type is not JSON serializable
+2025-06-18 18:28:57,818 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:28:58,057 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:29:06,743 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:29:07,468 INFO Watching for file changes with StatReloader
+2025-06-18 18:29:08,448 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:29:08,641 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:08,644 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:08,801 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:08,802 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:09,037 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:29:09,448 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:29:09,615 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:09,616 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:09,770 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:09,772 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:10,010 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:29:29,715 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:29:30,454 INFO Watching for file changes with StatReloader
+2025-06-18 18:29:31,192 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:29:31,383 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:31,386 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:31,544 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:31,546 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:31,781 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:29:41,353 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:29:41,998 INFO Watching for file changes with StatReloader
+2025-06-18 18:29:42,575 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:29:42,770 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:42,772 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:42,926 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:42,928 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:43,170 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:29:52,632 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:29:52,807 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:52,808 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:52,971 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:29:52,973 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:29:53,013 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:29:53,716 INFO Watching for file changes with StatReloader
+2025-06-18 18:29:54,399 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:29:54,415 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:29:54,484 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:30:06,689 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:30:07,408 INFO Watching for file changes with StatReloader
+2025-06-18 18:30:36,935 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:30:37,592 INFO Watching for file changes with StatReloader
+2025-06-18 18:31:59,296 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:31:59,941 INFO Watching for file changes with StatReloader
+2025-06-18 18:32:00,817 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:32:01,076 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:32:01,078 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:32:01,237 ERROR Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ellipsis is not JSON serializable
+2025-06-18 18:32:01,238 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:32:01,488 INFO Request: GET /__debug__/history_sidebar/ | User: 
+2025-06-18 18:32:12,886 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:32:13,682 INFO Watching for file changes with StatReloader
+2025-06-18 18:32:14,387 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:32:14,470 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:32:42,139 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:32:42,858 INFO Watching for file changes with StatReloader
+2025-06-18 18:32:43,530 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:32:43,617 INFO Request: GET /api/schema/ | User: 
+2025-06-18 18:33:23,647 INFO Watching for file changes with StatReloader
+2025-06-18 18:33:26,553 INFO Request: GET / | User: 
+2025-06-18 18:33:26,571 WARNING Not Found: /
+2025-06-18 18:33:27,393 INFO Request: GET /admin/ | User: 
+2025-06-18 18:33:27,430 INFO Request: GET /admin/login/ | User: 
+2025-06-18 18:33:28,056 INFO Request: GET /api/docs/ | User: 
+2025-06-18 18:33:28,252 INFO Request: GET /api/schema/ | User: 
