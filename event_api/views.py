@@ -27,10 +27,33 @@ from rest_framework.permissions import IsAuthenticated
                 'Пример успешного ответа',
                 value=[
                     {
-                        "id": 1,
-                        "title": "бабушка валя",
-                        "content": "Я люблю баб Валю...",
-                        "author": 1
+                        "id": 7,
+                        "title": "test",
+                        "description": "описание события",
+                        "location": "test location",
+                        "attendees": 2,
+                        "max_attendees": 100,
+                        "type": "conference",
+                        "author": {
+                            "id": 1,
+                            "username": "root",
+                            "role": "teacher",
+                            "email": "root@example.com",
+                            "first_name": "",
+                            "last_name": ""
+                        },
+                        "group": {
+                            "id": 1,
+                            "name": "БПИ-231"
+                        },
+                        "event_date": "2025-06-18T18:18:26.400886+03:00",
+                        "created_at": "2025-06-18T18:18:26.421883+03:00",
+                        "first_photo": {
+                            "id": 13,
+                            "photo": "http://localhost:8000/media/photo/5404762823990565366_ykiOwa9.jpg",
+                            "description": "описание фото..."
+                            }
+
                     }
                 ],
                 response_only=True,
@@ -39,15 +62,19 @@ from rest_framework.permissions import IsAuthenticated
         ]
     ),
     create=extend_schema(
-        summary="Создать пост",
+        summary="Создать мероприятие",
         description="Создание нового поста (требуется аутентификация)",
         request=EventSerializer,
         examples=[
             OpenApiExample(
                 'Пример запроса',
                 value={
-                    "title": "Новый пост",
-                    "content": "Содержание поста..."
+                    "title": "Пирожки с Олесей",
+                    'description': "Кирилл отведал пирожок...",
+                    "location": "Челюскинцев 381",
+                    'photos': ['media_file', ...],
+                    'videos': ['media_file', ...],
+                    'group_id': 'id группы'
                 },
                 request_only=True
             )

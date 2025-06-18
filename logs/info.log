@@ -321,3 +321,26 @@ AssertionError: The field 'group_id' was declared on serializer EventSerializer,
 2025-06-18 17:58:17,219 WARNING Bad Request: /event/3/
 2025-06-18 17:58:23,428 INFO Request: PATCH /event/3/ | User: root
 2025-06-18 17:58:36,337 INFO Request: POST /event/ | User: root
+2025-06-18 17:59:16,349 INFO Watching for file changes with StatReloader
+2025-06-18 17:59:18,782 INFO Request: GET /event/ | User: root
+2025-06-18 17:59:24,053 INFO Request: GET /event/5/ | User: root
+2025-06-18 17:59:26,973 INFO Request: GET /event/ | User: root
+2025-06-18 18:00:47,746 INFO Watching for file changes with StatReloader
+2025-06-18 18:00:49,854 INFO Request: POST /event/ | User: root
+2025-06-18 18:18:23,771 INFO Watching for file changes with StatReloader
+2025-06-18 18:18:26,480 INFO Request: POST /event/ | User: root
+2025-06-18 18:18:30,103 INFO Request: GET /event/ | User: root
+2025-06-18 18:19:52,485 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:19:53,502 INFO Watching for file changes with StatReloader
+2025-06-18 18:20:43,566 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:20:44,197 INFO Watching for file changes with StatReloader
+2025-06-18 18:21:18,921 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:21:19,537 INFO Watching for file changes with StatReloader
+2025-06-18 18:21:38,687 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:21:39,363 INFO Watching for file changes with StatReloader
+2025-06-18 18:22:32,542 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:22:33,132 INFO Watching for file changes with StatReloader
+2025-06-18 18:22:45,150 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:22:45,795 INFO Watching for file changes with StatReloader
+2025-06-18 18:22:49,540 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-18 18:22:50,154 INFO Watching for file changes with StatReloader
