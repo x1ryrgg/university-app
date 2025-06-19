@@ -24,46 +24,35 @@ class EventSerializer(serializers.ModelSerializer):
         allow_empty_file=False,
     ),
         write_only=True,
+        required=False,
     )
     videos = serializers.ListField(child=serializers.FileField(
         use_url=False,
         allow_empty_file=False,
     ),
         write_only=True,
+        required=False,
     )
     action = serializers.CharField(write_only=True, required=False)
     photo_ids = serializers.ListField(child=serializers.IntegerField(), write_only=True, required=False)
     video_ids = serializers.ListField(child=serializers.IntegerField(), write_only=True, required=False)
-    author = UserSerializer(read_only=True)
-    group = GroupSerializer(read_only=True)
-    group_id = serializers.PrimaryKeyRelatedField(
+    group = serializers.PrimaryKeyRelatedField(
         queryset=Group.objects.all(),
-        source='group',
-        write_only=True,
         required=False
     )
-    first_photo = serializers.SerializerMethodField()
+
 
     class Meta:
         model = Event
-        fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'author', 'group', 'group_id',
-                  'event_date', 'photos', 'videos', 'created_at', 'first_photo',
+        fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'author', 'group',
+                  'event_date', 'photos', 'videos', 'created_at',
                   'action', 'photo_ids', 'video_ids')
-        read_only_fields = ('id', 'author', 'created_at', 'attendees', 'first_photo')
-
-    def get_first_photo(self, obj):
-        first_photo = obj.photos.first()
-        if first_photo:
-            serializer = PhotoSerializer(
-                first_photo,
-                context=self.context
-            )
-            return serializer.data
-        return None
+        read_only_fields = ('id', 'author', 'created_at', 'attendees')
 
     def create(self, validated_data):
         photos_data = validated_data.pop('photos', [])
         videos_data = validated_data.pop('videos', [])
+
         validated_data['author'] = self.context['request'].user
 
         event = Event.objects.create(**validated_data)
@@ -113,10 +102,32 @@ class EventSerializer(serializers.ModelSerializer):
 
         return instance
 
+class ListEventSerializer(serializers.ModelSerializer):
+    author = UserSerializer(read_only=True)
+    group = GroupSerializer(read_only=True)
+    first_photo = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Event
+        fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'event_date', 'created_at',
+                  'author', 'group', 'first_photo',)
+
+    def get_first_photo(self, obj):
+        first_photo = obj.photos.first()
+        if first_photo:
+            serializer = PhotoSerializer(
+                first_photo,
+                context=self.context
+            )
+            return serializer.data
+        return None
+
 
 class DetailEventSerializer(serializers.ModelSerializer):
     photos = PhotoSerializer(many=True, read_only=True)
     videos = VideoSerializer(many=True, read_only=True)
+    author = UserSerializer(read_only=True)
+    group = GroupSerializer(read_only=True)
 
     class Meta:
         model = Event

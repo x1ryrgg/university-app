@@ -6,17 +6,17 @@ from usercontrol_api.models import User, Group
 
 class Event(models.Model):
     class Type(models.TextChoices):
-        CONFERENCE = ('conference', 'конференция')
-        CONTEST = ('contest', 'конкурс')
-        EXCURSION = ('excursion', 'экскурсия')
-        SEMINAR = ('seminar', 'семинар')
+        CONFERENCE = 'конференция'
+        CONTEST = 'конкурс'
+        EXCURSION = 'экскурсия'
+        SEMINAR = 'семинар'
 
     title = models.CharField(max_length=128)
     description = models.TextField(max_length=500, blank=True, null=True)
     location = models.CharField(max_length=128)
     group = models.ForeignKey(Group, on_delete=models.SET_NULL, null=True, blank=True)
     max_attendees = models.PositiveIntegerField(default=100, blank=True, null=True)
-    type = models.CharField(max_length=10, choices=Type.choices, default=Type.CONFERENCE)
+    type = models.CharField(max_length=11, choices=Type.choices, default=Type.CONFERENCE)
     event_date = models.DateTimeField(default=datetime.datetime.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     created_at = models.DateTimeField(auto_now_add=True)

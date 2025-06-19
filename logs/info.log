@@ -1111,3 +1111,397 @@ TypeError: Object of type ellipsis is not JSON serializable
 2025-06-18 18:33:27,430 INFO Request: GET /admin/login/ | User: 
 2025-06-18 18:33:28,056 INFO Request: GET /api/docs/ | User: 
 2025-06-18 18:33:28,252 INFO Request: GET /api/schema/ | User: 
+2025-06-19 12:05:44,778 INFO Watching for file changes with StatReloader
+2025-06-19 12:08:58,908 INFO Request: POST /api/token/ | User: 
+2025-06-19 12:09:07,668 INFO Request: GET /event/ | User: root
+2025-06-19 12:09:15,938 INFO Request: GET /event/7/ | User: root
+2025-06-19 12:10:00,611 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-19 12:10:01,339 INFO Watching for file changes with StatReloader
+2025-06-19 12:10:03,139 ERROR Internal Server Error: /event/7/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\python\university_backend\event_api\views.py", line 148, in get_object
+    return Event.objects.get(pk=self.kwargs['pk']).prefetch_related('photos', 'videos').select_related('author')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Event' object has no attribute 'prefetch_related'
+2025-06-19 12:10:03,142 INFO Request: GET /event/7/ | User: root
+2025-06-19 12:10:24,940 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-19 12:10:25,620 INFO Watching for file changes with StatReloader
+2025-06-19 12:10:27,072 INFO Request: GET /event/7/ | User: root
+2025-06-19 12:10:39,058 INFO Request: GET /event/7 | User: 
+2025-06-19 12:10:39,260 INFO Request: GET /event/7/ | User: root
+2025-06-19 12:10:47,071 INFO Request: GET /event/ | User: root
+2025-06-19 12:12:42,636 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 12:12:43,362 INFO Watching for file changes with StatReloader
+2025-06-19 12:12:48,263 INFO Request: GET /event/7. | User: 
+2025-06-19 12:12:48,298 WARNING Not Found: /event/7.
+2025-06-19 12:12:49,399 INFO Request: GET /event/7/ | User: root
+2025-06-19 12:13:02,937 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 12:13:03,633 INFO Watching for file changes with StatReloader
+2025-06-19 12:13:05,027 INFO Request: GET /event/7/ | User: root
+2025-06-19 14:11:16,668 INFO Watching for file changes with StatReloader
+2025-06-19 14:11:26,365 INFO Request: GET /event/7/ | User: 
+2025-06-19 14:11:26,396 WARNING Unauthorized: /event/7/
+2025-06-19 14:11:34,739 INFO Request: POST /api/token/ | User: 
+2025-06-19 14:11:42,650 INFO Request: GET /event/7/ | User: root
+2025-06-19 14:11:47,677 INFO Request: GET /event/ | User: root
+2025-06-19 14:11:59,885 INFO Request: POST /event/ | User: root
+2025-06-19 14:12:19,718 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:12:20,491 INFO Watching for file changes with StatReloader
+2025-06-19 14:15:27,694 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-19 14:15:29,176 INFO Watching for file changes with StatReloader
+2025-06-19 14:16:12,333 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-19 14:16:13,087 INFO Watching for file changes with StatReloader
+2025-06-19 14:16:29,254 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:16:30,048 INFO Watching for file changes with StatReloader
+2025-06-19 14:16:32,158 INFO Request: GET /event/ | User: root
+2025-06-19 14:16:46,048 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366.jpg
+2025-06-19 14:16:46,049 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371.jpg
+2025-06-19 14:16:46,053 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38.webm
+2025-06-19 14:16:46,058 INFO Request: DELETE /event/3/ | User: root
+2025-06-19 14:16:49,560 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_ZH3mhoq.jpg
+2025-06-19 14:16:49,561 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_tvXZpbf.jpg
+2025-06-19 14:16:49,565 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_bfQreOa.webm
+2025-06-19 14:16:49,570 INFO Request: DELETE /event/5/ | User: root
+2025-06-19 14:16:52,096 ERROR Internal Server Error: /event/5/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\python\university_backend\event_api\views.py", line 148, in get_object
+    return Event.objects.get(pk=self.kwargs['pk'])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+event_api.models.Event.DoesNotExist: Event matching query does not exist.
+2025-06-19 14:16:52,100 INFO Request: GET /event/5/ | User: root
+2025-06-19 14:17:02,383 INFO Request: GET /event/ | User: root
+2025-06-19 14:17:16,574 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_E9GWBde.jpg
+2025-06-19 14:17:16,575 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_9iCjBni.jpg
+2025-06-19 14:17:16,577 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_YqArH0A.webm
+2025-06-19 14:17:16,581 INFO Request: DELETE /event/6/ | User: root
+2025-06-19 14:17:19,384 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_ykiOwa9.jpg
+2025-06-19 14:17:19,384 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_vTNCIWl.jpg
+2025-06-19 14:17:19,387 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_VHGtW1Y.webm
+2025-06-19 14:17:19,390 INFO Request: DELETE /event/7/ | User: root
+2025-06-19 14:17:22,232 INFO Request: GET /event/ | User: root
+2025-06-19 14:17:25,745 INFO Request: GET /event/8/ | User: root
+2025-06-19 14:17:48,583 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:17:49,351 INFO Watching for file changes with StatReloader
+2025-06-19 14:17:50,932 ERROR Internal Server Error: /event/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'author' was declared on serializer ListEventSerializer, but has not been included in the 'fields' option.
+2025-06-19 14:17:50,936 INFO Request: GET /event/ | User: root
+2025-06-19 14:18:16,022 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:18:16,671 INFO Watching for file changes with StatReloader
+2025-06-19 14:18:18,002 INFO Request: GET /event/ | User: root
+2025-06-19 14:19:01,657 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:19:02,958 INFO Watching for file changes with StatReloader
+2025-06-19 14:19:04,418 ERROR Internal Server Error: /event/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'first_photo' was declared on serializer ListEventSerializer, but has not been included in the 'fields' option.
+2025-06-19 14:19:04,420 INFO Request: GET /event/ | User: root
+2025-06-19 14:19:29,520 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:19:30,251 INFO Watching for file changes with StatReloader
+2025-06-19 14:19:31,752 INFO Request: GET /event/ | User: root
+2025-06-19 14:20:18,375 INFO Request: GET /event/ | User: root
+2025-06-19 14:20:40,439 INFO Request: GET /event/ | User: root
+2025-06-19 14:20:51,364 INFO Request: GET /event/ | User: root
+2025-06-19 14:21:09,538 INFO Request: GET /event/8. | User: 
+2025-06-19 14:21:09,566 WARNING Not Found: /event/8.
+2025-06-19 14:21:11,050 INFO Request: GET /event/8/ | User: root
+2025-06-19 14:21:48,657 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:21:49,546 INFO Watching for file changes with StatReloader
+2025-06-19 14:21:50,746 INFO Request: GET /event/8/ | User: root
+2025-06-19 14:22:30,531 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:22:31,294 INFO Watching for file changes with StatReloader
+2025-06-19 14:22:32,568 INFO Request: GET /event/ | User: root
+2025-06-19 14:24:59,319 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:25:00,463 INFO Watching for file changes with StatReloader
+2025-06-19 14:25:04,469 ERROR Internal Server Error: /event/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 375, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 167, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='group'` on field 'PrimaryKeyRelatedField' in serializer 'EventSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+2025-06-19 14:25:04,472 INFO Request: POST /event/ | User: root
+2025-06-19 14:25:23,504 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:25:24,251 INFO Watching for file changes with StatReloader
+2025-06-19 14:25:31,069 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:25:31,763 INFO Watching for file changes with StatReloader
+2025-06-19 14:25:32,719 INFO Request: POST /event/ | User: root
+2025-06-19 14:26:00,327 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:26:01,056 INFO Watching for file changes with StatReloader
+2025-06-19 14:26:02,239 INFO Request: POST /event/ | User: root
+2025-06-19 14:26:11,769 INFO Request: GET /event/ | User: root
+2025-06-19 14:26:32,110 INFO Request: GET /event/ | User: root
+2025-06-19 14:26:44,644 INFO Request: GET /admin/ | User: 
+2025-06-19 14:26:44,813 INFO Request: GET /admin/login/ | User: 
+2025-06-19 14:26:44,963 INFO Request: GET /favicon.ico | User: 
+2025-06-19 14:26:44,978 WARNING Not Found: /favicon.ico
+2025-06-19 14:26:46,900 INFO Request: POST /admin/login/ | User: root
+2025-06-19 14:26:47,149 INFO Request: GET /admin/ | User: root
+2025-06-19 14:26:49,492 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-19 14:26:49,650 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-19 14:26:53,035 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-19 14:26:54,011 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_voo1bvf.jpg
+2025-06-19 14:26:54,012 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_tFEiHkL.webm
+2025-06-19 14:26:54,014 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366.jpg
+2025-06-19 14:26:54,014 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371.jpg
+2025-06-19 14:26:54,016 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38.webm
+2025-06-19 14:26:54,017 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_gItzWUQ.jpg
+2025-06-19 14:26:54,017 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_rEo7gSN.jpg
+2025-06-19 14:26:54,019 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_4m2ZX2y.webm
+2025-06-19 14:26:54,022 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-19 14:26:54,142 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-19 14:26:54,225 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-19 14:27:09,411 INFO Request: GET /event/ | User: root
+2025-06-19 14:27:50,849 INFO Request: POST /event/ | User: root
+2025-06-19 14:27:50,862 WARNING Bad Request: /event/
+2025-06-19 14:28:00,107 INFO Request: POST /event/ | User: root
+2025-06-19 14:28:13,518 INFO Request: GET /event/ | User: root
+2025-06-19 14:28:25,479 INFO Request: GET /event/11/ | User: root
+2025-06-19 14:29:04,247 INFO Request: PATCH /event/11/ | User: root
+2025-06-19 14:29:09,962 INFO Request: GET /event/11/ | User: root
+2025-06-19 14:29:27,403 INFO Request: GET /event/11/ | User: root
+2025-06-19 14:29:37,908 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366.jpg
+2025-06-19 14:29:37,908 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371.jpg
+2025-06-19 14:29:37,908 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_qUjpdDs.jpg
+2025-06-19 14:29:37,909 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_1CwMmnS.jpg
+2025-06-19 14:29:37,912 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38.webm
+2025-06-19 14:29:37,916 INFO Request: DELETE /event/11/ | User: root
+2025-06-19 14:29:57,516 INFO Request: POST /event/ | User: root
+2025-06-19 14:29:57,523 WARNING Bad Request: /event/
+2025-06-19 14:30:01,997 INFO Request: POST /event/ | User: root
+2025-06-19 14:30:12,505 INFO Request: GET /event/ | User: root
+2025-06-19 14:30:30,008 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:30:30,723 INFO Watching for file changes with StatReloader
+2025-06-19 14:30:32,166 INFO Request: POST /event/ | User: root
+2025-06-19 14:30:35,991 INFO Request: GET /event/ | User: root
+2025-06-19 14:30:41,443 INFO Request: GET /event/13/ | User: root
+2025-06-19 14:30:55,483 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_gOl1fVX.jpg
+2025-06-19 14:30:55,484 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_kri3vcf.jpg
+2025-06-19 14:30:55,487 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_PyqW8fl.webm
+2025-06-19 14:30:55,492 INFO Request: DELETE /event/13/ | User: root
+2025-06-19 14:31:03,358 INFO Request: GET /event/12/ | User: root
+2025-06-19 14:31:12,052 INFO Request: PATCH /event/12/ | User: root
+2025-06-19 14:31:15,835 INFO Request: GET /event/12/ | User: root
+2025-06-19 14:31:31,936 INFO Request: PATCH /event/12/ | User: root
+2025-06-19 14:31:33,949 INFO Request: GET /event/12/ | User: root
+2025-06-19 14:31:55,016 INFO Request: POST /event/ | User: root
+2025-06-19 14:31:55,025 WARNING Bad Request: /event/
+2025-06-19 14:32:19,623 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-19 14:32:20,306 INFO Watching for file changes with StatReloader
+2025-06-19 14:32:24,772 INFO Request: POST /event/ | User: root
+2025-06-19 14:32:30,288 INFO Request: GET /event/14/ | User: root
+2025-06-19 14:33:07,560 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-19 14:33:08,219 INFO Watching for file changes with StatReloader
+2025-06-19 14:33:18,490 INFO Request: GET /event/14/ | User: root
+2025-06-19 14:33:22,204 INFO Request: POST /event/ | User: root
+2025-06-19 14:33:22,217 WARNING Bad Request: /event/
+2025-06-19 14:36:49,343 INFO Watching for file changes with StatReloader
+2025-06-19 14:36:51,392 INFO Request: GET / | User: root
+2025-06-19 14:36:51,419 WARNING Not Found: /
+2025-06-19 14:36:55,063 INFO Request: GET /admin/ | User: root
+2025-06-19 14:36:58,304 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-19 14:36:58,425 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-19 14:37:01,631 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-19 14:37:03,313 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38.webm
+2025-06-19 14:37:03,317 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-19 14:37:03,549 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-19 14:37:03,633 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-19 14:37:05,164 INFO Request: GET /admin/event_api/event/add/ | User: root
+2025-06-19 14:37:05,269 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-19 14:37:15,578 INFO Request: GET /admin/event_api/event/add/ | User: root
+2025-06-19 14:37:15,721 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-19 14:37:15,863 INFO Request: GET /favicon.ico | User: root
+2025-06-19 14:37:15,895 WARNING Not Found: /favicon.ico
+2025-06-19 14:37:32,396 INFO Request: POST /event/ | User: root
+2025-06-19 14:37:32,405 WARNING Bad Request: /event/
+2025-06-19 14:37:38,888 INFO Request: POST /event/ | User: root

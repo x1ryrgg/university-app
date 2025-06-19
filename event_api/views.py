@@ -72,9 +72,10 @@ from rest_framework.permissions import IsAuthenticated
                     "title": "Пирожки с Олесей",
                     'description': "Кирилл отведал пирожок...",
                     "location": "Челюскинцев 381",
-                    'photos': ['media_files'],
-                    'videos': ['media_files'],
-                    'group_id': 'id группы'
+                    "event_date": "YYYY-MM-DDThh:mm",
+                    'group': 'id группы (Опцианально)',
+                    'photos': "['media_files'] (Опцианально)",
+                    'videos': "[media_files'] (Опцианально)",
                 },
                 request_only=True
             )
@@ -144,9 +145,16 @@ class PostViewSet(ModelViewSet):
     def get_queryset(self):
         return Event.objects.prefetch_related('photos', 'videos').select_related('author')
 
+    def get_object(self):
+        return Event.objects.get(pk=self.kwargs['pk'])
+
     def get_serializer_class(self):
         if self.action == 'retrieve':
             return DetailEventSerializer
+        if self.action == 'list':
+            return ListEventSerializer
+
         return super().get_serializer_class()
+
 
 
