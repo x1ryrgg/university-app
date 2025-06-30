@@ -10,4 +10,5 @@ router.register('', PostViewSet, basename='post')
 
 urlpatterns = [
     path('event/', include(router.urls)),
+    path('photos/', PhotoView.as_view(), name='photos'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1505,3 +1505,843 @@ AssertionError: It is redundant to specify `source='group'` on field 'PrimaryKey
 2025-06-19 14:37:32,396 INFO Request: POST /event/ | User: root
 2025-06-19 14:37:32,405 WARNING Bad Request: /event/
 2025-06-19 14:37:38,888 INFO Request: POST /event/ | User: root
+2025-06-20 14:03:41,892 INFO Watching for file changes with StatReloader
+2025-06-20 14:03:47,643 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:04:00,737 INFO Request: GET /me/ | User: root
+2025-06-20 14:04:41,554 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:04:41,570 WARNING Unauthorized: /api/token/
+2025-06-20 14:04:46,908 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:04:56,138 INFO Request: GET /me/ | User: student1
+2025-06-20 14:18:53,324 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:19:02,061 INFO Request: GET /me/ | User: root
+2025-06-20 14:19:02,311 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 14:19:02,376 INFO Request: GET /me/ | User: root
+2025-06-20 14:25:10,928 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:25:10,938 WARNING Unauthorized: /api/token/
+2025-06-20 14:25:32,835 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:25:44,063 INFO Request: GET /me/ | User: student1
+2025-06-20 14:25:44,246 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 14:25:44,311 INFO Request: GET /me/ | User: student1
+2025-06-20 14:27:30,154 INFO Request: GET /me/ | User: student1
+2025-06-20 14:27:45,074 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:30:34,726 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:30:42,871 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:30:42,887 WARNING Unauthorized: /api/token/
+2025-06-20 14:30:56,834 INFO Request: GET /me/ | User: root
+2025-06-20 14:30:56,994 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 14:30:57,058 INFO Request: GET /me/ | User: root
+2025-06-20 14:32:06,067 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:32:09,654 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:32:09,662 WARNING Unauthorized: /api/token/
+2025-06-20 14:32:38,434 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:32:41,057 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:32:41,068 WARNING Unauthorized: /api/token/
+2025-06-20 14:33:21,399 INFO Request: POST /api/token/ | User: 
+2025-06-20 14:33:25,690 INFO Request: GET /me/ | User: root
+2025-06-20 14:33:25,874 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 14:33:25,948 INFO Request: GET /me/ | User: root
+2025-06-20 15:24:37,506 INFO Request: GET /me/ | User: root
+2025-06-20 15:38:38,686 INFO Request: POST /api/token/ | User: 
+2025-06-20 15:38:44,124 INFO Request: GET /me/ | User: root
+2025-06-20 15:38:44,450 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 15:38:44,523 INFO Request: GET /me/ | User: root
+2025-06-20 15:40:02,912 INFO Request: POST /api/token/ | User: 
+2025-06-20 15:40:08,283 INFO Request: GET /me/ | User: root
+2025-06-20 15:40:08,470 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 15:40:08,534 INFO Request: GET /me/ | User: root
+2025-06-20 15:43:22,066 INFO Request: POST /api/token/ | User: 
+2025-06-20 15:44:44,045 INFO Request: POST /api/token/ | User: 
+2025-06-20 15:44:52,174 INFO Request: GET /me/ | User: student1
+2025-06-20 15:44:52,366 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 15:44:52,520 INFO Request: GET /me/ | User: student1
+2025-06-20 15:48:59,290 INFO Request: POST /api/token/ | User: 
+2025-06-20 15:49:06,184 INFO Request: GET /me/ | User: root
+2025-06-20 15:49:06,366 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 15:49:06,426 INFO Request: GET /me/ | User: root
+2025-06-20 15:55:24,439 INFO Request: GET /me/ | User: root
+2025-06-20 15:55:38,001 INFO Request: POST /api/token/ | User: 
+2025-06-20 15:55:42,748 INFO Request: GET /me/ | User: root
+2025-06-20 15:55:43,026 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 15:55:43,089 INFO Request: GET /me/ | User: root
+2025-06-20 15:56:58,362 INFO Request: GET /me/ | User: root
+2025-06-20 16:00:37,634 INFO D:\python\university_backend\usercontrol_api\urls.py changed, reloading.
+2025-06-20 16:00:38,368 INFO Watching for file changes with StatReloader
+2025-06-20 16:08:04,346 INFO Request: GET /me/ | User: root
+2025-06-20 16:14:21,898 INFO Request: GET /me/ | User: root
+2025-06-20 16:16:19,692 INFO Request: GET /me/ | User: root
+2025-06-20 16:19:02,574 INFO Request: GET /me/ | User: root
+2025-06-20 16:25:52,632 INFO Request: GET /me/ | User: root
+2025-06-20 16:28:27,416 INFO Watching for file changes with StatReloader
+2025-06-20 16:28:33,765 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:28:41,628 INFO Request: GET /me/ | User: student1
+2025-06-20 16:29:09,468 INFO Request: GET /me/ | User: student1
+2025-06-20 16:29:20,606 INFO Request: GET /me/ | User: student1
+2025-06-20 16:29:26,344 INFO Request: GET /me/ | User: student1
+2025-06-20 16:29:36,616 INFO Request: GET /me/ | User: 
+2025-06-20 16:29:36,630 WARNING Unauthorized: /me/
+2025-06-20 16:30:47,126 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:30:50,524 INFO Request: GET /me/ | User: root
+2025-06-20 16:30:50,796 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:30:50,852 INFO Request: GET /me/ | User: root
+2025-06-20 16:33:52,291 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:33:55,292 INFO Request: GET /me/ | User: root
+2025-06-20 16:33:55,477 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:33:55,555 INFO Request: GET /me/ | User: root
+2025-06-20 16:34:02,986 INFO Request: GET /me/ | User: root
+2025-06-20 16:34:08,615 INFO Request: GET /me/ | User: root
+2025-06-20 16:37:52,012 INFO Watching for file changes with StatReloader
+2025-06-20 16:37:56,698 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:38:15,130 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:38:21,992 INFO Request: GET /me/ | User: root
+2025-06-20 16:38:52,034 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:38:52,048 WARNING Bad Request: /api/token/refresh/
+2025-06-20 16:39:26,905 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:42:26,508 INFO Request: GET /me/ | User: 
+2025-06-20 16:42:26,529 WARNING Unauthorized: /me/
+2025-06-20 16:43:05,419 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:43:16,155 INFO Request: GET /me/ | User: root
+2025-06-20 16:43:16,364 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:43:16,415 INFO Request: GET /me/ | User: root
+2025-06-20 16:43:22,796 INFO Request: GET /me/ | User: root
+2025-06-20 16:43:22,991 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:43:23,043 INFO Request: GET /me/ | User: root
+2025-06-20 16:49:02,941 INFO Request: GET /me/ | User: root
+2025-06-20 16:49:03,259 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:49:03,318 INFO Request: GET /me/ | User: root
+2025-06-20 16:49:36,054 INFO Request: POST /api/token/ | User: 
+2025-06-20 16:49:41,848 INFO Request: GET /me/ | User: root
+2025-06-20 16:49:42,172 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:49:42,347 INFO Request: GET /me/ | User: root
+2025-06-20 16:49:47,382 INFO Request: GET /me/ | User: root
+2025-06-20 16:49:47,560 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 16:49:47,640 INFO Request: GET /me/ | User: root
+2025-06-20 17:07:53,835 INFO Request: GET /me/ | User: root
+2025-06-20 17:08:38,646 INFO Request: GET /me/ | User: root
+2025-06-20 17:08:40,378 INFO Request: GET /me/ | User: root
+2025-06-20 17:08:43,334 INFO Request: GET /me/ | User: 
+2025-06-20 17:08:43,343 WARNING Unauthorized: /me/
+2025-06-20 17:08:48,362 INFO Request: GET /me/ | User: root
+2025-06-20 17:10:07,214 INFO D:\python\university_backend\university_backend\settings.py changed, reloading.
+2025-06-20 17:10:07,850 INFO Watching for file changes with StatReloader
+2025-06-20 17:10:16,862 INFO Watching for file changes with StatReloader
+2025-06-20 17:10:34,347 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:10:39,020 INFO Request: GET /me/ | User: root
+2025-06-20 17:10:41,962 INFO Request: GET /me/ | User: root
+2025-06-20 17:10:48,224 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:10:55,984 INFO Request: GET /me/ | User: root
+2025-06-20 17:11:32,188 INFO Request: GET /me/ | User: root
+2025-06-20 17:11:43,357 INFO Request: GET /me/ | User: root
+2025-06-20 17:11:47,577 INFO Request: GET /me/ | User: root
+2025-06-20 17:11:53,326 INFO Request: GET /me/ | User: 
+2025-06-20 17:11:53,343 WARNING Unauthorized: /me/
+2025-06-20 17:11:59,260 INFO Request: GET /me/ | User: 
+2025-06-20 17:11:59,282 WARNING Unauthorized: /me/
+2025-06-20 17:12:31,041 INFO Request: GET /me/ | User: 
+2025-06-20 17:12:31,048 WARNING Unauthorized: /me/
+2025-06-20 17:13:22,333 INFO Request: GET /me/ | User: 
+2025-06-20 17:13:22,340 WARNING Unauthorized: /me/
+2025-06-20 17:13:53,342 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:13:56,575 INFO Request: GET /me/ | User: root
+2025-06-20 17:14:46,784 INFO Request: GET /me/ | User: root
+2025-06-20 17:15:22,003 INFO Request: GET /me/ | User: 
+2025-06-20 17:15:22,019 WARNING Unauthorized: /me/
+2025-06-20 17:20:47,982 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:20:50,017 INFO Request: GET /me/ | User: root
+2025-06-20 17:20:53,326 INFO Request: GET /me/ | User: root
+2025-06-20 17:21:58,879 INFO Request: GET /me/ | User: 
+2025-06-20 17:21:58,898 WARNING Unauthorized: /me/
+2025-06-20 17:22:20,015 INFO Request: GET /me/ | User: 
+2025-06-20 17:22:20,030 WARNING Unauthorized: /me/
+2025-06-20 17:23:37,848 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:23:41,263 INFO Request: GET /me/ | User: root
+2025-06-20 17:24:30,457 INFO Request: GET /me/ | User: root
+2025-06-20 17:24:53,572 INFO Request: GET /me/ | User: 
+2025-06-20 17:24:53,595 WARNING Unauthorized: /me/
+2025-06-20 17:25:14,749 INFO Request: GET /me/ | User: 
+2025-06-20 17:25:14,756 WARNING Unauthorized: /me/
+2025-06-20 17:27:01,376 INFO Request: GET /me/ | User: 
+2025-06-20 17:27:01,386 WARNING Unauthorized: /me/
+2025-06-20 17:28:57,227 INFO Request: GET /me/ | User: 
+2025-06-20 17:28:57,247 WARNING Unauthorized: /me/
+2025-06-20 17:29:14,839 INFO Request: GET /me/ | User: 
+2025-06-20 17:29:14,859 WARNING Unauthorized: /me/
+2025-06-20 17:29:48,827 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:29:54,670 INFO Request: GET /me/ | User: student1
+2025-06-20 17:30:50,365 INFO Request: GET /me/ | User: 
+2025-06-20 17:30:50,371 WARNING Unauthorized: /me/
+2025-06-20 17:43:50,488 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:45:39,349 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:45:43,037 INFO Request: GET /me/ | User: student1
+2025-06-20 17:45:46,934 INFO Request: GET /me/ | User: student1
+2025-06-20 17:49:38,047 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:49:38,058 WARNING Unauthorized: /api/token/
+2025-06-20 17:49:55,135 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:49:57,738 INFO Request: GET /me/ | User: root
+2025-06-20 17:50:48,103 INFO Request: GET /me/ | User: root
+2025-06-20 17:51:20,335 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 17:51:20,410 INFO Request: GET /me/ | User: root
+2025-06-20 17:51:56,857 INFO Request: GET /me/ | User: root
+2025-06-20 17:54:50,928 INFO Request: POST /api/token/ | User: 
+2025-06-20 17:54:57,625 INFO Request: GET /me/ | User: student1
+2025-06-20 17:56:34,059 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-20 17:56:34,119 INFO Request: GET /me/ | User: student1
+2025-06-20 17:56:47,062 INFO Request: GET /me/ | User: student1
+2025-06-20 21:05:41,085 INFO Watching for file changes with StatReloader
+2025-06-20 21:06:04,799 INFO Watching for file changes with StatReloader
+2025-06-20 21:07:22,934 INFO Watching for file changes with StatReloader
+2025-06-20 21:07:31,741 ERROR Internal Server Error: /api/token/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ОШИБКА:  столбец usercontrol_api_user.tg_id не существует
+LINE 1: ..._user"."role", "usercontrol_api_user"."group_id", "usercontr...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 73, in validate
+    data = super().validate(attrs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  столбец usercontrol_api_user.tg_id не существует
+LINE 1: ..._user"."role", "usercontrol_api_user"."group_id", "usercontr...
+                                                             ^
+
+2025-06-20 21:07:31,757 INFO Request: POST /api/token/ | User: 
+2025-06-20 21:07:57,950 INFO Watching for file changes with StatReloader
+2025-06-20 21:08:00,643 INFO Request: POST /api/token/ | User: 
+2025-06-20 21:08:11,356 INFO Request: GET /users/ | User: root
+2025-06-20 21:08:25,023 INFO Request: GET /users/role=student | User: 
+2025-06-20 21:08:25,083 INFO Request: GET /users/role=student/ | User: root
+2025-06-20 21:08:25,091 WARNING Not Found: /users/role=student/
+2025-06-20 21:08:49,313 INFO Request: GET /users/r | User: 
+2025-06-20 21:08:49,398 INFO Request: GET /users/r/ | User: root
+2025-06-20 21:08:49,415 WARNING Not Found: /users/r/
+2025-06-20 21:08:50,697 INFO Request: GET /users/ | User: root
+2025-06-20 21:08:52,196 INFO Request: GET /users/2/ | User: root
+2025-06-20 21:08:53,685 INFO Request: GET /users/ | User: root
+2025-06-20 21:08:56,667 INFO Request: GET /users/role=student | User: 
+2025-06-20 21:08:56,743 INFO Request: GET /users/role=student/ | User: root
+2025-06-20 21:08:56,760 WARNING Not Found: /users/role=student/
+2025-06-20 21:09:01,658 INFO Request: GET /users/role=teacher | User: 
+2025-06-20 21:09:01,725 INFO Request: GET /users/role=teacher/ | User: root
+2025-06-20 21:09:01,735 WARNING Not Found: /users/role=teacher/
+2025-06-20 21:09:10,026 INFO Request: GET /users/ | User: root
+2025-06-20 21:09:14,482 INFO Request: GET /users/ | User: root
+2025-06-20 21:09:17,060 INFO Request: GET /users/ | User: root
+2025-06-20 21:09:25,033 INFO Request: GET /users/ | User: root
+2025-06-20 21:09:27,477 INFO Request: GET /users/ | User: root
+2025-06-20 21:09:31,519 INFO Request: GET /users/ | User: root
+2025-06-20 21:09:34,178 INFO Request: GET /users/ | User: root
+2025-06-20 21:14:52,988 INFO Watching for file changes with StatReloader
+2025-06-20 21:15:43,032 INFO Request: POST /api/token/ | User: 
+2025-06-20 21:15:43,155 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-20 21:20:02,844 INFO Request: GET /users/ | User: root
+2025-06-20 21:23:08,426 INFO Request: GET /users/ | User: root
+2025-06-20 21:25:33,401 INFO Request: GET /users/ | User: root
+2025-06-20 21:27:24,598 INFO Request: POST /api/token/ | User: 
+2025-06-20 21:27:24,676 INFO Request: PATCH /user/link_telegram/ | User: student1
+2025-06-20 21:27:27,154 INFO Request: GET /users/ | User: student1
+2025-06-21 11:25:44,245 INFO Watching for file changes with StatReloader
+2025-06-21 11:26:19,840 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:26:20,113 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 11:26:35,221 INFO Request: GET /me/ | User: root
+2025-06-21 11:26:53,298 INFO Request: GET /users/ | User: root
+2025-06-21 11:28:48,611 INFO Request: GET /me/ | User: root
+2025-06-21 11:28:53,536 INFO Request: GET /users/ | User: root
+2025-06-21 11:29:09,147 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:29:09,215 INFO Request: PATCH /user/link_telegram/ | User: student1
+2025-06-21 11:29:22,995 INFO Request: GET /users/ | User: student1
+2025-06-21 11:35:53,920 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:35:53,936 WARNING Unauthorized: /api/token/
+2025-06-21 11:36:59,036 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:36:59,115 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 11:38:13,717 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:38:13,778 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 11:38:20,688 INFO Request: GET /me/ | User: root
+2025-06-21 11:38:25,370 INFO Request: GET /users/ | User: root
+2025-06-21 11:42:22,841 INFO Request: GET /users/ | User: 
+2025-06-21 11:42:22,850 WARNING Unauthorized: /users/
+2025-06-21 11:42:26,160 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:42:36,612 INFO Request: GET /users/ | User: root
+2025-06-21 11:43:45,133 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:43:45,860 INFO Watching for file changes with StatReloader
+2025-06-21 11:44:12,223 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:44:12,913 INFO Watching for file changes with StatReloader
+2025-06-21 11:44:48,813 INFO Watching for file changes with StatReloader
+2025-06-21 11:44:52,797 INFO Request: GET /users/ | User: root
+2025-06-21 11:45:20,451 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:45:21,150 INFO Watching for file changes with StatReloader
+2025-06-21 11:45:31,017 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:45:31,687 INFO Watching for file changes with StatReloader
+2025-06-21 11:48:24,318 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:48:24,974 INFO Watching for file changes with StatReloader
+2025-06-21 11:48:25,989 INFO Request: GET /users/ | User: root
+2025-06-21 11:48:33,103 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:48:36,520 INFO Request: GET /users/ | User: root
+2025-06-21 11:48:40,709 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:48:42,599 ERROR Internal Server Error: /users/1352441814/
+Traceback (most recent call last):
+  File "D:\python\university_backend\usercontrol_api\views.py", line 119, in get_object
+    return self.queryset.get(tg_id=tg_id)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+usercontrol_api.models.User.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\usercontrol_api\views.py", line 128, in retrieve
+    serializer = self.get_serializer(self.get_object())
+                                     ~~~~~~~~~~~~~~~^^
+  File "D:\python\university_backend\usercontrol_api\views.py", line 121, in get_object
+    raise KeyError("Пользователь с таким telegram ID не найден")
+KeyError: 'Пользователь с таким telegram ID не найден'
+2025-06-21 11:48:42,602 INFO Request: GET /users/1352441814/ | User: root
+2025-06-21 11:48:58,250 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:50:04,496 INFO Request: GET /me/ | User: root
+2025-06-21 11:50:08,746 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:50:28,180 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:50:28,190 WARNING Unauthorized: /api/token/
+2025-06-21 11:50:48,069 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:50:48,127 INFO Request: PATCH /user/link_telegram/ | User: student1
+2025-06-21 11:52:15,439 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:52:15,546 INFO Request: PATCH /user/link_telegram/ | User: student1
+2025-06-21 11:52:17,684 INFO Request: GET /me/ | User: student1
+2025-06-21 11:52:24,094 INFO Request: GET /users/1352441813/ | User: student1
+2025-06-21 11:53:35,224 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:53:35,922 INFO Watching for file changes with StatReloader
+2025-06-21 11:53:37,482 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:53:40,715 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:53:41,415 INFO Watching for file changes with StatReloader
+2025-06-21 11:53:42,608 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:53:43,922 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:53:44,871 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 11:53:49,235 INFO D:\python\university_backend\usercontrol_api\views.py changed, reloading.
+2025-06-21 11:53:49,917 INFO Watching for file changes with StatReloader
+2025-06-21 11:53:54,448 INFO Watching for file changes with StatReloader
+2025-06-21 11:54:22,780 INFO Request: POST /api/token/ | User: 
+2025-06-21 11:54:22,880 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 11:54:35,064 INFO Request: GET /me/ | User: root
+2025-06-21 11:54:39,123 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:04:46,106 INFO Watching for file changes with StatReloader
+2025-06-21 13:05:22,625 INFO Request: POST /api/token/ | User: 
+2025-06-21 13:05:22,733 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 13:05:24,016 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:06:46,586 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:07:38,685 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:07:43,460 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:10:07,297 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:22:18,391 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:25:31,156 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:25:34,846 INFO Request: GET /group/ | User: root
+2025-06-21 13:26:02,324 INFO Request: POST /api/token/ | User: 
+2025-06-21 13:26:17,305 INFO Request: POST /group/ | User: root
+2025-06-21 13:27:43,743 INFO Request: POST /group/ | User: root
+2025-06-21 13:30:27,992 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:30:41,251 INFO Request: GET /group/ | User: root
+2025-06-21 13:37:27,107 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:37:30,808 INFO Request: GET /group/ | User: root
+2025-06-21 13:44:51,133 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:44:55,588 INFO Request: GET /group/ | User: root
+2025-06-21 13:54:53,826 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:55:02,896 INFO Request: GET /group/ | User: root
+2025-06-21 13:58:17,724 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:58:21,135 INFO Request: GET /group/ | User: root
+2025-06-21 13:59:40,135 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 13:59:46,680 INFO Request: GET /group/ | User: root
+2025-06-21 14:01:04,898 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:01:09,298 INFO Request: GET /group/ | User: root
+2025-06-21 14:04:42,174 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:04:47,646 INFO Request: GET /group/ | User: root
+2025-06-21 14:14:27,308 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-21 14:14:27,368 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:14:42,393 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:14:49,665 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:14:53,258 INFO Request: GET /group/ | User: root
+2025-06-21 14:16:33,285 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:16:36,937 INFO Request: GET /group/ | User: root
+2025-06-21 14:17:28,670 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:17:33,239 INFO Request: GET /group/ | User: root
+2025-06-21 14:31:15,596 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:31:20,792 INFO Request: GET /group/ | User: root
+2025-06-21 14:36:32,521 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:36:32,577 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:41:53,024 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 14:42:05,413 INFO Request: GET /group/ | User: root
+2025-06-21 15:10:04,735 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:10:09,647 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:10:16,393 INFO Request: GET /group/ | User: root
+2025-06-21 15:14:50,079 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-21 15:14:50,137 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:16:11,962 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:18:43,812 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:18:50,241 INFO Request: GET /group/ | User: root
+2025-06-21 15:18:57,400 INFO Request: POST /event/ | User: root
+2025-06-21 15:20:56,005 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:21:05,589 INFO Request: GET /group/ | User: root
+2025-06-21 15:21:12,818 INFO Request: POST /event/ | User: root
+2025-06-21 15:21:38,440 INFO Request: POST /api/token/ | User: 
+2025-06-21 15:21:55,366 INFO Request: GET /event/17/ | User: root
+2025-06-21 15:22:40,771 INFO Request: POST /api/token/ | User: 
+2025-06-21 15:22:40,938 INFO Request: PATCH /user/link_telegram/ | User: student1
+2025-06-21 15:22:42,431 INFO Request: GET /users/1352441813/ | User: student1
+2025-06-21 15:22:45,284 INFO Request: GET /users/1352441813/ | User: student1
+2025-06-21 15:22:49,550 INFO Request: GET /users/1352441813/ | User: student1
+2025-06-21 15:22:57,470 INFO Request: POST /api/token/ | User: 
+2025-06-21 15:22:57,545 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 15:23:00,222 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:23:06,656 INFO Request: GET /group/ | User: root
+2025-06-21 15:23:14,471 INFO Request: POST /event/ | User: root
+2025-06-21 15:23:14,487 WARNING Bad Request: /event/
+2025-06-21 15:23:41,573 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:23:48,416 INFO Request: GET /group/ | User: root
+2025-06-21 15:23:57,028 INFO Request: POST /event/ | User: root
+2025-06-21 15:31:25,970 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:31:33,956 INFO Request: GET /group/ | User: root
+2025-06-21 15:33:01,230 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:33:07,190 INFO Request: GET /group/ | User: root
+2025-06-21 15:36:45,148 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:36:51,494 INFO Request: GET /group/ | User: root
+2025-06-21 15:37:05,844 INFO Request: POST /event/ | User: root
+2025-06-21 15:42:55,598 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:43:06,013 INFO Request: GET /group/ | User: root
+2025-06-21 15:45:23,438 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:45:29,971 INFO Request: GET /group/ | User: root
+2025-06-21 15:45:34,731 INFO Request: POST /event/ | User: root
+2025-06-21 15:45:46,493 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:46:05,558 INFO Request: GET /group/ | User: root
+2025-06-21 15:46:12,308 INFO Request: POST /event/ | User: root
+2025-06-21 15:46:49,588 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:46:55,725 INFO Request: GET /group/ | User: root
+2025-06-21 15:54:56,694 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:55:02,709 INFO Request: GET /group/ | User: root
+2025-06-21 15:55:27,493 INFO Request: POST /event/ | User: root
+2025-06-21 15:57:35,814 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:57:42,860 INFO Request: GET /group/ | User: root
+2025-06-21 15:58:15,716 INFO Request: POST /api/token/ | User: 
+2025-06-21 15:58:15,874 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 15:58:18,266 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:58:26,285 INFO Request: GET /group/ | User: root
+2025-06-21 15:58:45,727 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 15:59:54,893 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:00:01,511 INFO Request: GET /group/ | User: root
+2025-06-21 16:04:30,769 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:04:36,092 INFO Request: GET /group/ | User: root
+2025-06-21 16:04:56,365 INFO Request: POST /event/ | User: root
+2025-06-21 16:05:11,163 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:05:16,687 INFO Request: GET /group/ | User: root
+2025-06-21 16:06:18,329 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:06:24,560 INFO Request: GET /group/ | User: root
+2025-06-21 16:07:19,380 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:07:24,352 INFO Request: GET /group/ | User: root
+2025-06-21 16:07:31,243 INFO Request: POST /event/ | User: root
+2025-06-21 16:13:46,129 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:13:51,753 INFO Request: GET /group/ | User: root
+2025-06-21 16:14:10,772 INFO Request: POST /event/ | User: root
+2025-06-21 16:16:56,905 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:17:03,730 INFO Request: GET /group/ | User: root
+2025-06-21 16:17:23,846 INFO Request: POST /event/ | User: root
+2025-06-21 16:17:37,205 INFO Request: POST /api/token/ | User: 
+2025-06-21 16:17:47,183 INFO Request: GET /event/ | User: root
+2025-06-21 16:17:50,163 ERROR Internal Server Error: /event/27/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\python\university_backend\event_api\views.py", line 149, in get_object
+    return Event.objects.get(pk=self.kwargs['pk'])
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+event_api.models.Event.DoesNotExist: Event matching query does not exist.
+2025-06-21 16:17:50,166 INFO Request: GET /event/27/ | User: root
+2025-06-21 16:17:58,110 INFO Request: GET /event/26/ | User: root
+2025-06-21 16:20:36,519 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:20:54,846 INFO Request: GET /group/ | User: root
+2025-06-21 16:20:59,815 INFO Request: POST /event/ | User: root
+2025-06-21 16:20:59,827 WARNING Bad Request: /event/
+2025-06-21 16:32:58,285 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:33:03,742 INFO Request: GET /group/ | User: root
+2025-06-21 16:33:32,609 INFO Request: POST /event/ | User: root
+2025-06-21 16:34:09,513 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:34:40,212 INFO Request: GET /group/ | User: root
+2025-06-21 16:35:40,917 INFO Request: POST /event/ | User: root
+2025-06-21 16:35:56,485 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:36:09,288 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:36:52,026 INFO Request: GET /group/ | User: root
+2025-06-21 16:38:04,962 INFO Request: POST /event/ | User: root
+2025-06-21 16:38:27,304 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:38:50,157 INFO Request: GET /group/ | User: root
+2025-06-21 16:40:13,216 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 16:40:37,210 INFO Request: GET /group/ | User: root
+2025-06-21 16:40:43,632 INFO Request: POST /event/ | User: root
+2025-06-21 16:41:16,162 INFO Request: GET /me/ | User: root
+2025-06-21 16:41:19,765 INFO Request: GET /me/ | User: root
+2025-06-21 16:48:29,643 INFO Request: GET /me/ | User: root
+2025-06-21 16:55:37,681 INFO Request: POST /api/token/ | User: 
+2025-06-21 16:55:46,003 INFO Request: GET /event/ | User: root
+2025-06-21 16:59:59,278 INFO Request: POST /api/token/refresh/ | User: 
+2025-06-21 16:59:59,348 INFO Request: GET /event/ | User: root
+2025-06-21 17:08:25,845 INFO Request: GET /event/ | User: root
+2025-06-21 17:11:08,845 INFO Request: GET /event/ | User: root
+2025-06-21 17:13:06,392 INFO Request: GET /event/ | User: root
+2025-06-21 17:14:28,989 INFO Request: GET /event/ | User: root
+2025-06-21 17:15:02,063 INFO Request: GET /event/ | User: root
+2025-06-21 17:17:50,304 INFO Request: GET /event/ | User: root
+2025-06-21 17:18:10,358 INFO Request: GET /me/ | User: root
+2025-06-21 17:18:12,420 INFO Request: GET /event/ | User: root
+2025-06-21 17:18:21,696 INFO Request: POST /api/token/ | User: 
+2025-06-21 17:18:21,758 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 17:29:04,148 INFO Request: POST /api/token/ | User: 
+2025-06-21 17:29:04,320 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 17:29:06,983 INFO Request: GET /event/ | User: root
+2025-06-21 17:29:09,862 INFO Request: GET /me/ | User: root
+2025-06-21 17:29:16,423 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 17:29:19,559 INFO Request: GET /event/ | User: root
+2025-06-21 17:32:45,548 INFO Request: POST /api/token/ | User: 
+2025-06-21 17:32:45,737 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 17:32:48,211 INFO Request: GET /users/327525315/ | User: root
+2025-06-21 17:32:57,497 INFO Request: GET /group/ | User: root
+2025-06-21 17:33:05,095 INFO Request: POST /event/ | User: root
+2025-06-21 17:33:10,039 INFO Request: GET /event/ | User: root
+2025-06-21 19:00:10,440 INFO Request: POST /api/token/ | User: 
+2025-06-21 19:00:10,601 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 19:00:19,398 INFO Request: GET /users/5409334956/ | User: root
+2025-06-21 19:00:25,520 INFO Request: GET /me/ | User: root
+2025-06-21 19:00:29,767 INFO Request: GET /event/ | User: root
+2025-06-21 22:49:53,408 INFO Watching for file changes with StatReloader
+2025-06-21 22:50:21,282 INFO Request: POST /api/token/ | User: 
+2025-06-21 22:50:21,558 INFO Request: PATCH /user/link_telegram/ | User: student1
+2025-06-21 22:50:23,627 INFO Request: GET /me/ | User: student1
+2025-06-21 22:50:28,812 INFO Request: GET /users/1352441813/ | User: student1
+2025-06-21 22:52:09,797 INFO Request: GET /event/ | User: student1
+2025-06-21 22:52:47,785 INFO Request: POST /api/token/ | User: 
+2025-06-21 22:52:47,862 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-21 22:52:49,997 INFO Request: GET /users/1352441813/ | User: root
+2025-06-21 22:53:06,430 INFO Request: GET /group/ | User: root
+2025-06-21 22:53:31,904 INFO Request: POST /event/ | User: root
+2025-06-21 22:53:45,872 INFO Request: GET /event/ | User: root
+2025-06-21 22:56:37,539 INFO Request: GET /me/ | User: root
+2025-06-21 22:56:41,232 INFO Request: GET /event/ | User: root
+2025-06-24 13:34:54,846 INFO Watching for file changes with StatReloader
+2025-06-24 13:36:52,127 INFO Request: POST /api/token/ | User: 
+2025-06-24 13:36:52,391 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-24 13:36:54,688 INFO Request: GET /event/ | User: root
+2025-06-24 13:37:58,878 INFO Request: POST /api/token/ | User: 
+2025-06-24 13:38:04,336 INFO Request: POST /api/token/ | User: 
+2025-06-24 13:38:21,993 INFO Request: POST /event/ | User: root
+2025-06-24 13:38:30,349 INFO Request: GET /event/ | User: 
+2025-06-24 13:38:30,360 WARNING Unauthorized: /event/
+2025-06-24 13:38:42,117 INFO Request: POST /event/ | User: root
+2025-06-24 13:38:49,332 INFO Request: GET /event/ | User: root
+2025-06-24 13:38:54,103 INFO Request: GET /event/ | User: root
+2025-06-24 13:40:08,007 INFO Request: GET /me/ | User: root
+2025-06-24 13:40:09,451 INFO Request: GET /event/ | User: root
+2025-06-24 13:44:05,561 INFO Request: GET /event/ | User: root
+2025-06-24 13:45:32,584 INFO Request: GET /event/ | User: root
+2025-06-24 13:45:32,764 INFO Request: GET /media/photo/5404762823990565366_2Cj1SiN.jpg | User: 
+2025-06-24 13:45:33,299 INFO Request: GET /media/photo/5404762823990565366.jpg | User: 
+2025-06-24 13:46:43,456 INFO Request: GET /event/ | User: root
+2025-06-24 13:46:43,606 INFO Request: GET /media/photo/5404762823990565366_2Cj1SiN.jpg | User: 
+2025-06-24 13:47:33,635 INFO Request: GET /event/ | User: root
+2025-06-24 13:47:33,927 INFO Request: GET /media/photo/5404762823990565366_2Cj1SiN.jpg | User: 
+2025-06-24 13:48:30,636 INFO Request: POST /event/ | User: root
+2025-06-24 13:48:34,401 INFO Request: GET /event/ | User: root
+2025-06-24 13:48:56,509 INFO Request: GET / | User: root
+2025-06-24 13:48:56,524 WARNING Not Found: /
+2025-06-24 13:48:56,702 INFO Request: GET /favicon.ico | User: root
+2025-06-24 13:48:56,717 WARNING Not Found: /favicon.ico
+2025-06-24 13:48:59,842 INFO Request: GET /admin/ | User: root
+2025-06-24 13:49:03,367 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-24 13:49:03,529 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-24 13:49:09,461 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-24 13:49:10,521 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366.jpg
+2025-06-24 13:49:10,522 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371.jpg
+2025-06-24 13:49:10,528 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38.webm
+2025-06-24 13:49:10,531 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565366_2Cj1SiN.jpg
+2025-06-24 13:49:10,532 INFO Deleted photo file: D:\python\university_backend\media\photo\5404762823990565371_uu5KGMx.jpg
+2025-06-24 13:49:10,537 INFO Deleted video file: D:\python\university_backend\media\video\content_warning_0c895d38_6J3c4RA.webm
+2025-06-24 13:49:10,546 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-24 13:49:10,705 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-24 13:49:10,895 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-24 13:49:16,175 INFO Request: GET /event/ | User: root
+2025-06-24 13:49:44,216 INFO Request: GET /event/ | User: root
+2025-06-24 13:49:50,208 INFO Request: POST /event/ | User: root
+2025-06-24 13:49:52,827 INFO Request: GET /event/ | User: root
+2025-06-24 13:49:52,874 INFO Request: GET /media/photo/5404762823990565366.jpg | User: 
+2025-06-30 12:39:15,851 INFO Watching for file changes with StatReloader
+2025-06-30 12:42:58,323 INFO Watching for file changes with StatReloader
+2025-06-30 14:26:46,698 INFO Watching for file changes with StatReloader
+2025-06-30 14:27:00,326 INFO Watching for file changes with StatReloader
+2025-06-30 15:52:51,068 INFO Watching for file changes with StatReloader
+2025-06-30 15:53:43,418 INFO Request: POST /api/token/ | User: 
+2025-06-30 15:53:43,527 WARNING Unauthorized: /api/token/
+2025-06-30 15:53:51,431 INFO Request: POST /api/token/ | User: 
+2025-06-30 15:53:51,527 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-30 15:53:54,119 INFO Request: GET /event/ | User: root
+2025-06-30 15:53:55,037 INFO Request: GET /me/ | User: root
+2025-06-30 15:55:40,481 INFO Request: GET /me/ | User: root
+2025-06-30 15:56:03,703 INFO Request: POST /api/token/ | User: 
+2025-06-30 15:56:03,762 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-06-30 15:59:41,324 INFO Request: GET /users/5747889546/ | User: root
+2025-06-30 16:00:05,281 INFO Request: GET /group/ | User: root
+2025-06-30 16:00:28,666 INFO Request: GET /event/ | User: root
+2025-06-30 16:00:42,880 INFO Request: GET /me/ | User: root
+2025-06-30 16:50:53,007 INFO Request: POST /api/token/ | User: 
+2025-06-30 16:51:20,286 INFO Request: POST /event/ | User: root
+2025-06-30 16:51:20,304 WARNING Bad Request: /event/
+2025-06-30 16:51:35,535 INFO Request: GET /group/ | User: root
+2025-06-30 16:51:39,698 INFO Request: POST /group/ | User: root
+2025-06-30 16:52:00,460 INFO Request: POST /group/ | User: root
+2025-06-30 16:52:03,624 INFO Request: POST /event/ | User: root
+2025-06-30 16:52:12,057 INFO Request: POST /event/ | User: root
+2025-06-30 16:52:15,182 INFO Request: GET /event/ | User: root
+2025-06-30 16:52:56,202 INFO Request: GET /event/ | User: root
+2025-06-30 16:53:15,952 INFO Request: GET /event/1/ | User: root
+2025-06-30 16:53:40,285 INFO Watching for file changes with StatReloader
+2025-06-30 16:53:46,049 INFO Request: GET / | User: 
+2025-06-30 16:53:46,073 WARNING Not Found: /
+2025-06-30 16:53:46,208 INFO Request: GET /favicon.ico | User: 
+2025-06-30 16:53:46,219 WARNING Not Found: /favicon.ico
+2025-06-30 16:53:46,666 INFO Request: GET /admin/ | User: 
+2025-06-30 16:53:46,777 INFO Request: GET /admin/login/ | User: 
+2025-06-30 16:53:49,536 INFO Request: POST /admin/login/ | User: root
+2025-06-30 16:53:49,698 INFO Request: GET /admin/ | User: root
+2025-06-30 16:53:52,494 INFO Request: GET /admin/event_api/eventphoto/ | User: root
+2025-06-30 16:53:52,609 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-30 16:53:53,767 INFO Request: GET /admin/ | User: root
+2025-06-30 16:54:37,666 INFO Watching for file changes with StatReloader
+2025-06-30 16:54:40,187 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-30 16:54:40,291 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-30 16:54:41,567 INFO Request: GET /admin/event_api/event/2/change/ | User: root
+2025-06-30 16:54:41,662 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-30 16:54:43,947 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-30 16:54:48,392 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-30 16:54:49,377 INFO Request: POST /admin/event_api/event/ | User: root
+2025-06-30 16:54:49,631 INFO Request: GET /admin/event_api/event/ | User: root
+2025-06-30 16:54:49,721 INFO Request: GET /admin/jsi18n/ | User: root
+2025-06-30 16:55:15,443 INFO Request: POST /event/1/ | User: root
+2025-06-30 16:55:15,455 WARNING Method Not Allowed: /event/1/
+2025-06-30 16:55:17,707 INFO Request: POST /event/ | User: root
+2025-06-30 16:55:37,127 INFO Request: GET /event/3/ | User: root
+2025-06-30 16:56:25,971 INFO Request: POST /api/token/ | User: 
+2025-06-30 16:56:35,459 INFO Request: GET /event/ | User: root
+2025-06-30 16:57:24,650 INFO Request: GET /event/ | User: root
+2025-06-30 16:57:27,843 INFO Request: POST /event/ | User: root
+2025-06-30 16:57:27,852 WARNING Bad Request: /event/
+2025-06-30 16:57:39,314 INFO Request: POST /event/ | User: root
+2025-06-30 16:57:49,981 INFO Request: GET /event/1. | User: 
+2025-06-30 16:57:50,004 WARNING Not Found: /event/1.
+2025-06-30 16:57:57,673 INFO Request: GET /event/4 | User: 
+2025-06-30 16:57:57,753 INFO Request: GET /event/4/ | User: root
+2025-06-30 16:57:59,206 INFO Request: GET /event/4/ | User: root
+2025-06-30 16:58:05,727 INFO Request: GET /event/ | User: root
+2025-06-30 16:58:16,138 INFO Request: DELETE /event/3/ | User: root
+2025-06-30 16:58:23,803 INFO Request: POST /event/ | User: root
+2025-06-30 16:58:25,937 INFO Request: GET /event/ | User: root
+2025-06-30 16:59:01,515 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 16:59:02,239 INFO Watching for file changes with StatReloader
+2025-06-30 17:02:05,724 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:02:06,384 INFO Watching for file changes with StatReloader
+2025-06-30 17:06:45,276 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-30 17:06:45,947 INFO Watching for file changes with StatReloader
+2025-06-30 17:06:46,733 INFO Request: GET /admin/ | User: root
+2025-06-30 17:06:48,540 INFO Request: GET /photos | User: root
+2025-06-30 17:06:48,623 ERROR Internal Server Error: /photos/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python\university_backend\event_api\views.py", line 166, in get
+    queryset = EventPhoto.objects.all().selected_related('event')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'selected_related'. Did you mean: 'select_related'?
+2025-06-30 17:06:48,626 INFO Request: GET /photos/ | User: 
+2025-06-30 17:06:56,933 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:06:57,580 INFO Watching for file changes with StatReloader
+2025-06-30 17:06:58,349 ERROR Internal Server Error: /photos/
+Traceback (most recent call last):
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\python\university_backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\university_backend\.venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.utils.serializer_helpers.ReturnList'>`
+2025-06-30 17:06:58,350 INFO Request: GET /photos/ | User: 
+2025-06-30 17:07:13,604 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:07:14,355 INFO Watching for file changes with StatReloader
+2025-06-30 17:07:17,193 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:07:17,817 INFO Watching for file changes with StatReloader
+2025-06-30 17:07:18,663 INFO Request: GET /photos/ | User: 
+2025-06-30 17:07:34,893 INFO D:\python\university_backend\event_api\serializers.py changed, reloading.
+2025-06-30 17:07:35,505 INFO Watching for file changes with StatReloader
+2025-06-30 17:07:36,252 INFO Request: GET /photos/ | User: 
+2025-06-30 17:07:48,039 INFO Request: GET /__debug__/render_panel/ | User: root
+2025-06-30 17:07:54,534 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:07:55,157 INFO Watching for file changes with StatReloader
+2025-06-30 17:07:56,020 INFO Request: GET /photos/ | User: 
+2025-06-30 17:07:57,367 INFO Request: GET /__debug__/render_panel/ | User: root
+2025-06-30 17:07:59,831 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:08:00,494 INFO Watching for file changes with StatReloader
+2025-06-30 17:08:01,282 INFO Request: GET /photos/ | User: 
+2025-06-30 17:08:08,283 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:08:08,938 INFO Watching for file changes with StatReloader
+2025-06-30 17:08:16,752 INFO D:\python\university_backend\event_api\views.py changed, reloading.
+2025-06-30 17:08:17,387 INFO Watching for file changes with StatReloader
+2025-06-30 17:08:18,153 INFO Request: GET /photos/ | User: 
+2025-06-30 17:08:18,205 WARNING Unauthorized: /photos/
+2025-06-30 17:09:33,988 INFO Watching for file changes with StatReloader
+2025-06-30 17:09:36,046 INFO Request: GET /photos/ | User: root

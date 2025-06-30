@@ -1,5 +1,6 @@
 from rest_framework import status
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from drf_spectacular.utils import (
     extend_schema,
@@ -12,7 +13,8 @@ from drf_spectacular.utils import (
 from .models import *
 from .serializers import *
 from usercontrol_api.permissions import IsTeacherOrReadOnly
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+
 
 @extend_schema_view(
     list=extend_schema(
@@ -155,6 +157,21 @@ class PostViewSet(ModelViewSet):
             return ListEventSerializer
 
         return super().get_serializer_class()
+
+
+
+class PhotoView(APIView):
+    """ Endpoint для просмотра все фото
+    url: /photos/
+    """
+    permission_classes = (IsAuthenticated, )
+
+    def get(self, request, *args, **kwargs):
+        serializer = AllPhotoSerializer
+        queryset = EventPhoto.objects.all().select_related('event')
+
+        return Response(serializer(queryset, many=True).data, status=status.HTTP_200_OK)
+
 
 
 

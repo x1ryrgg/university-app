@@ -12,7 +12,7 @@ class Event(models.Model):
         SEMINAR = 'семинар'
 
     title = models.CharField(max_length=128)
-    description = models.TextField(max_length=500, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
     location = models.CharField(max_length=128)
     group = models.ForeignKey(Group, on_delete=models.SET_NULL, null=True, blank=True)
     max_attendees = models.PositiveIntegerField(default=100, blank=True, null=True)

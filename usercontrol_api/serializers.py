@@ -46,6 +46,12 @@ class DetailGroupSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'students')
 
 
+class UserTelegramSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'role', 'tg_id')
+
+
 
 
 # class TeacherCreationSerializer(serializers.ModelSerializer):

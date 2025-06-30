@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 
-from .filters import UserFilter
+
 from .models import *
 from .serializers import *
 from .permissions import *
@@ -96,6 +96,42 @@ class GroupViewSet(ModelViewSet):
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserView(ModelViewSet):
+    """Endpoint для просмотра всех пользователей (для тг бота)
+    url: /users/
+    """
+    permission_classes = [IsAuthenticated]
+    serializer_class = UserTelegramSerializer
+    queryset = User.objects.all()
+    http_method_names = ["get"]
+    lookup_url_kwarg = 'tg_id'
+
+    def get_object(self):
+        # Получаем tg_id из URL параметров
+        tg_id = self.kwargs.get(self.lookup_url_kwarg)
+
+        try:
+            return self.queryset.get(tg_id=tg_id)
+        except User.DoesNotExist:
+            raise KeyError("Пользователь с таким telegram ID не найден")
+        except User.MultipleObjectsReturned:
+            # На случай если вдруг несколько пользователей с одинаковым tg_id
+            return self.queryset.filter(tg_id=tg_id).first()
+
+
+class LinkTelegramId(APIView):
+    """Endpoint для свзяи тг аккаунта с апи аккаунта
+    url: /user/link_telegram/
+    """
+    def patch(self, request):
+        tg_id = request.data.get('tg_id')
+        User.objects.filter(tg_id=tg_id).update(tg_id=None)
+        user = request.user
+        user.tg_id = tg_id
+        user.save()
+        return Response({"detail": "tg_id прикреплен к аккаунту. "}, status=status.HTTP_200_OK)
 
 
 # class TeacherRegisterView(CreateAPIView):

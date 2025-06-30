@@ -133,4 +133,15 @@ class DetailEventSerializer(serializers.ModelSerializer):
         model = Event
         fields = ('id', 'title', 'description', 'location', 'attendees', 'max_attendees', 'type', 'author', 'group',
                   'event_date', 'created_at', 'photos', 'videos')
-        
+
+
+
+class AllPhotoSerializer(serializers.ModelSerializer):
+    event = serializers.SerializerMethodField()
+
+    class Meta:
+        model = EventPhoto
+        fields = ('id', 'photo', 'event')
+
+    def get_event(self, obj):
+        return obj.event.title
