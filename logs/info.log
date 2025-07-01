@@ -2345,3 +2345,16 @@ AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse`
 2025-06-30 17:08:18,205 WARNING Unauthorized: /photos/
 2025-06-30 17:09:33,988 INFO Watching for file changes with StatReloader
 2025-06-30 17:09:36,046 INFO Request: GET /photos/ | User: root
+2025-07-01 22:22:02,706 INFO Watching for file changes with StatReloader
+2025-07-01 22:30:12,216 INFO Watching for file changes with StatReloader
+2025-07-01 22:30:28,238 INFO Watching for file changes with StatReloader
+2025-07-01 23:05:35,130 INFO Watching for file changes with StatReloader
+2025-07-01 23:05:37,679 INFO Request: GET / | User: 
+2025-07-01 23:05:37,707 WARNING Not Found: /
+2025-07-01 23:05:37,861 INFO Request: GET /favicon.ico | User: 
+2025-07-01 23:05:37,874 WARNING Not Found: /favicon.ico
+2025-07-01 23:05:43,046 INFO Request: GET /photos/ | User: 
+2025-07-01 23:05:43,062 WARNING Unauthorized: /photos/
+2025-07-01 23:06:42,981 INFO D:\python\university-app\event_api\views.py changed, reloading.
+2025-07-01 23:06:43,652 INFO Watching for file changes with StatReloader
+2025-07-01 23:06:44,440 INFO Request: GET /photos/ | User: 

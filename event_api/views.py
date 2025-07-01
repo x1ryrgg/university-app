@@ -13,7 +13,7 @@ from drf_spectacular.utils import (
 from .models import *
 from .serializers import *
 from usercontrol_api.permissions import IsTeacherOrReadOnly
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly, AllowAny
 
 
 @extend_schema_view(
@@ -164,7 +164,7 @@ class PhotoView(APIView):
     """ Endpoint для просмотра все фото
     url: /photos/
     """
-    permission_classes = (IsAuthenticated, )
+    permission_classes = (AllowAny, )
 
     def get(self, request, *args, **kwargs):
         serializer = AllPhotoSerializer
