@@ -152,4 +152,6 @@ class LinkTelegramId(APIView):
 #         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-'slfkjdlfkjdf'
+class TestView(ModelViewSet):
+    serializer_class = GroupSerializer
+    model = Group
