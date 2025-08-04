@@ -155,3 +155,12 @@ class LinkTelegramId(APIView):
 class TestView(ModelViewSet):
     serializer_class = GroupSerializer
     model = Group
+
+
+class NewTestView(APIView):
+
+    def get(self, request):
+        data = User
+        serializer = UserSerializer(data, many=True).data
+        return Response(serializer status=status.HTTP_200_OK)
+
