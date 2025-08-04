@@ -2358,3 +2358,162 @@ AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse`
 2025-07-01 23:06:42,981 INFO D:\python\university-app\event_api\views.py changed, reloading.
 2025-07-01 23:06:43,652 INFO Watching for file changes with StatReloader
 2025-07-01 23:06:44,440 INFO Request: GET /photos/ | User: 
+2025-07-02 10:49:12,977 INFO Watching for file changes with StatReloader
+2025-07-02 20:34:10,839 INFO Watching for file changes with StatReloader
+2025-07-02 20:34:20,442 INFO Watching for file changes with StatReloader
+2025-07-02 20:45:30,342 INFO Watching for file changes with StatReloader
+2025-07-02 20:45:57,480 INFO Request: POST /api/token/ | User: 
+2025-07-02 20:45:57,777 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-02 20:46:02,831 INFO Request: GET /me/ | User: root
+2025-07-02 20:46:04,807 INFO Request: GET /event/ | User: root
+2025-07-02 20:47:23,689 INFO Watching for file changes with StatReloader
+2025-07-02 20:47:41,154 INFO Request: POST /api/token/ | User: 
+2025-07-02 20:47:41,301 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-02 20:47:50,302 INFO Request: GET /users/1352441813/ | User: root
+2025-07-02 20:48:21,111 INFO Request: GET /group/ | User: root
+2025-07-02 20:53:23,138 INFO Request: GET /users/1352441813/ | User: root
+2025-07-02 20:53:38,111 INFO Request: GET /group/ | User: root
+2025-07-02 20:54:16,260 INFO Request: GET /users/1352441813/ | User: root
+2025-07-02 20:54:22,952 INFO Request: GET /group/ | User: root
+2025-07-02 20:57:32,986 INFO Request: GET /users/1352441813/ | User: root
+2025-07-02 20:57:42,641 INFO Request: GET /group/ | User: root
+2025-07-02 21:01:01,076 INFO Request: GET /users/1352441813/ | User: root
+2025-07-02 21:01:10,445 INFO Request: GET /group/ | User: root
+2025-07-02 21:01:49,172 INFO Request: POST /event/ | User: root
+2025-07-02 21:01:49,220 WARNING Bad Request: /event/
+2025-07-02 21:02:57,433 INFO Request: POST /api/token/ | User: 
+2025-07-02 21:02:57,464 WARNING Bad Request: /api/token/
+2025-07-02 21:03:15,635 INFO Request: POST /api/token/ | User: 
+2025-07-02 21:03:45,761 INFO Request: POST /group/ | User: root
+2025-07-02 21:03:52,792 INFO Request: POST /group/ | User: root
+2025-07-02 21:03:57,363 INFO Request: GET /group/ | User: root
+2025-07-02 21:04:01,006 INFO Request: GET /group/2. | User: 
+2025-07-02 21:04:01,056 WARNING Not Found: /group/2.
+2025-07-02 21:04:03,147 INFO Request: GET /group/2/ | User: root
+2025-07-02 21:04:16,860 INFO Request: GET /users/1352441813/ | User: root
+2025-07-02 21:04:43,146 INFO Request: GET /group/ | User: root
+2025-07-02 21:05:00,106 INFO Request: POST /event/ | User: root
+2025-07-02 21:06:25,782 INFO Request: GET /event/ | User: root
+2025-07-02 21:06:33,194 INFO Request: GET /me/ | User: root
+2025-07-02 21:07:41,271 INFO Request: GET /event/ | User: root
+2025-07-08 10:00:01,544 INFO Watching for file changes with StatReloader
+2025-07-08 10:00:10,998 INFO Request: GET /group/2/ | User: 
+2025-07-08 10:00:11,045 WARNING Unauthorized: /group/2/
+2025-07-08 10:00:19,638 INFO Request: POST /api/token/ | User: 
+2025-07-08 10:00:42,033 INFO Request: GET /me/ | User: root
+2025-07-08 10:01:03,497 INFO Request: GET /me/ | User: 
+2025-07-08 10:01:03,505 WARNING Unauthorized: /me/
+2025-07-08 10:01:23,009 INFO Request: GET /me/ | User: 
+2025-07-08 10:01:23,017 WARNING Unauthorized: /me/
+2025-07-08 10:01:27,871 INFO Request: GET /me/ | User: 
+2025-07-08 10:01:27,880 WARNING Unauthorized: /me/
+2025-07-08 10:01:38,495 INFO Request: GET /me/ | User: 
+2025-07-08 10:01:38,506 WARNING Unauthorized: /me/
+2025-07-08 10:03:10,700 INFO Request: GET /me/ | User: 
+2025-07-08 10:03:10,712 WARNING Unauthorized: /me/
+2025-07-08 10:03:46,047 INFO Request: GET /me/ | User: 
+2025-07-08 10:03:46,060 WARNING Unauthorized: /me/
+2025-07-08 10:07:47,933 INFO Request: GET /me/ | User: root
+2025-07-08 10:08:30,846 INFO Request: GET /me/ | User: root
+2025-07-08 10:08:44,125 INFO Request: GET /me/ | User: root
+2025-07-08 10:09:05,018 INFO Request: GET /me/ | User: root
+2025-07-08 10:09:10,950 INFO Request: GET /me/ | User: root
+2025-07-08 10:09:52,350 INFO Request: GET /me/ | User: root
+2025-07-08 10:10:00,746 INFO Request: GET /me/ | User: root
+2025-07-08 10:10:08,416 INFO Request: GET /me/ | User: root
+2025-07-08 10:10:17,808 INFO Request: GET /me/ | User: root
+2025-07-08 10:11:41,240 INFO Request: GET /me/ | User: root
+2025-07-08 10:11:50,243 INFO Request: GET /me/ | User: root
+2025-07-08 10:13:09,895 INFO Request: GET /me/ | User: root
+2025-07-08 10:13:24,561 INFO Request: GET /me/ | User: root
+2025-07-08 10:13:39,315 INFO Request: GET /me/ | User: root
+2025-07-08 10:13:58,912 INFO Request: GET /me/ | User: root
+2025-07-08 10:15:03,820 INFO Request: GET /event/ | User: 
+2025-07-08 10:15:03,842 WARNING Unauthorized: /event/
+2025-07-08 10:15:07,706 INFO Request: POST /api/token/ | User: 
+2025-07-08 10:15:15,778 INFO Request: GET /event/ | User: root
+2025-07-08 10:15:56,775 INFO Request: GET /me/ | User: root
+2025-07-08 10:45:59,980 INFO Watching for file changes with StatReloader
+2025-07-08 10:46:09,267 INFO Request: POST /api/token/ | User: 
+2025-07-08 10:46:09,281 WARNING Unsupported Media Type: /api/token/
+2025-07-08 10:46:28,635 INFO Request: POST /api/token/ | User: 
+2025-07-08 10:47:04,056 INFO Request: POST /api/token/ | User: 
+2025-07-08 10:47:18,179 INFO Request: POST /api/token/ | User: 
+2025-07-09 12:11:43,103 INFO Watching for file changes with StatReloader
+2025-07-09 12:12:43,512 INFO Request: POST /api/token/ | User: 
+2025-07-09 12:12:43,808 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-09 12:12:46,725 INFO Request: GET /me/ | User: root
+2025-07-09 12:12:48,813 INFO Request: GET /me/ | User: root
+2025-07-09 12:12:57,073 INFO Request: GET /me/ | User: root
+2025-07-09 12:49:27,774 INFO Request: GET /me/ | User: root
+2025-07-09 13:26:37,627 INFO Request: POST /api/token/refresh/ | User: 
+2025-07-09 13:26:39,834 INFO Request: POST /api/token/refresh/ | User: 
+2025-07-09 13:26:39,891 INFO Request: POST /api/token/refresh/ | User: 
+2025-07-09 13:26:41,992 INFO Request: POST /api/token/refresh/ | User: 
+2025-07-09 13:26:42,121 INFO Request: GET /event/ | User: root
+2025-07-09 13:26:42,194 INFO Request: GET /me/ | User: root
+2025-07-09 13:26:44,247 INFO Request: GET /users/1352441813/ | User: root
+2025-07-09 13:26:44,305 INFO Request: GET /users/1352441813/ | User: root
+2025-07-09 13:26:57,531 INFO Request: GET /event/ | User: root
+2025-07-09 14:24:10,046 INFO Watching for file changes with StatReloader
+2025-07-09 14:24:23,795 INFO Request: GET /me/ | User: root
+2025-07-09 14:24:26,372 INFO Request: GET /me/ | User: root
+2025-07-09 14:24:27,548 INFO Request: GET /me/ | User: root
+2025-07-09 14:24:28,908 INFO Request: GET /event/ | User: root
+2025-07-09 14:24:30,729 INFO Request: GET /me/ | User: root
+2025-07-09 14:24:48,373 INFO Request: GET /event/ | User: root
+2025-07-09 14:25:38,861 INFO Request: POST /api/token/ | User: 
+2025-07-09 14:25:38,944 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-09 14:25:50,749 INFO Request: GET /me/ | User: root
+2025-07-09 14:34:01,473 INFO Request: GET /event/ | User: root
+2025-07-09 14:34:04,589 INFO Request: GET /me/ | User: root
+2025-07-09 14:35:14,168 INFO Request: GET /event/ | User: root
+2025-07-09 14:39:10,541 INFO Request: POST /api/token/ | User: 
+2025-07-09 14:39:10,615 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-09 14:39:13,636 INFO Request: GET /me/ | User: root
+2025-07-09 14:39:29,102 INFO Request: GET /me/ | User: root
+2025-07-09 14:39:47,559 INFO Request: GET /me/ | User: root
+2025-07-09 14:47:24,089 INFO Request: GET /me/ | User: root
+2025-07-09 14:49:33,147 INFO Request: GET /event/ | User: root
+2025-07-09 14:52:16,989 INFO Request: POST /api/token/ | User: 
+2025-07-09 14:52:17,081 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-09 14:52:18,960 INFO Request: GET /me/ | User: root
+2025-07-09 15:38:02,999 INFO Watching for file changes with StatReloader
+2025-07-09 15:38:15,369 INFO Request: GET /event/ | User: root
+2025-07-09 15:38:17,353 INFO Request: GET /me/ | User: root
+2025-07-09 15:40:47,176 INFO Request: GET /event/ | User: root
+2025-07-09 15:41:21,762 INFO Request: POST /api/token/ | User: 
+2025-07-09 15:41:37,450 INFO Request: GET /events/ | User: 
+2025-07-09 15:41:37,481 WARNING Not Found: /events/
+2025-07-09 15:41:40,112 INFO Request: GET /event. | User: 
+2025-07-09 15:41:40,142 WARNING Not Found: /event.
+2025-07-09 15:41:43,920 INFO Request: GET /event/ | User: root
+2025-07-09 15:41:49,254 INFO Request: POST /event/ | User: root
+2025-07-09 15:41:49,267 WARNING Bad Request: /event/
+2025-07-09 15:42:38,294 INFO Request: GET /group/ | User: root
+2025-07-09 15:44:18,188 INFO Request: POST /event/ | User: root
+2025-07-09 15:44:18,203 WARNING Bad Request: /event/
+2025-07-09 15:44:28,380 INFO Request: POST /event/ | User: root
+2025-07-09 15:44:33,134 INFO Request: GET /event/ | User: root
+2025-07-09 15:44:57,489 INFO Request: POST /api/token/ | User: 
+2025-07-09 15:44:57,560 INFO Request: PATCH /user/link_telegram/ | User: root
+2025-07-09 15:45:13,198 INFO Request: GET /me/ | User: root
+2025-07-09 15:45:35,019 INFO Request: GET /event/ | User: root
+2025-07-09 15:45:35,054 INFO Request: GET /media/photo/фото1.jpg | User: 
+2025-07-09 15:45:50,135 INFO Request: GET /media/photo/фото1.jpg | User: 
+2025-07-09 15:45:55,817 INFO Request: GET /media/photo/фото1.jpg | User: 
+2025-07-09 15:45:59,289 INFO Request: GET /media/photo/фото1.jpg | User: 
+2025-07-31 19:32:21,732 INFO Request: GET /admin/ | User: 
+2025-07-31 19:32:21,772 INFO Request: GET /admin/login/ | User: 
+2025-07-31 19:32:21,812 INFO Request: GET /static/admin/css/base.css | User: 
+2025-07-31 19:32:21,819 INFO Request: GET /static/admin/css/dark_mode.css | User: 
+2025-07-31 19:32:21,824 INFO Request: GET /static/admin/css/nav_sidebar.css | User: 
+2025-07-31 19:32:21,828 INFO Request: GET /static/admin/css/login.css | User: 
+2025-07-31 19:32:21,831 INFO Request: GET /static/admin/css/responsive.css | User: 
+2025-07-31 19:32:21,835 INFO Request: GET /static/admin/js/theme.js | User: 
+2025-07-31 19:32:21,839 INFO Request: GET /static/admin/js/nav_sidebar.js | User: 
+2025-07-31 19:32:21,922 INFO Request: GET /favicon.ico | User: 
+2025-07-31 19:32:21,923 WARNING Not Found: /favicon.ico
+2025-07-31 19:32:26,093 INFO Request: GET / | User: 
+2025-07-31 19:32:26,093 WARNING Not Found: /
+2025-07-31 19:32:34,183 INFO Request: POST /api/token/ | User: 
